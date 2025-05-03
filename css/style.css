@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+body {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #080E49;
+    color: white;
+    padding: 10px 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+.logo-text {
+    font-size: 26px;
+    font-weight: bold;
+    margin-right: 40px;
+}
+.logo {
+    text-decoration: none;
+    color: white;
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 4px 8px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+nav ul li a:hover {
+    color: #080E49;
+    background-color: white;
+    text-decoration: underline;
+}
+.landing-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #080E49;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+.landing-page h1{
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+.landing-page p{
+    font-size: 1.25rem;
+    max-width: 600px;
+}
+.landing-page a{
+    border: 1px solid white;
+    padding: 15px;
+    color: white;
+    border-radius: 15px;
+    width: 150px;
+}
+.landing-page a:hover{
+    background-color: white;
+    transition: 0.8s ease;
+    color:#080E49;
+}
+.container{
+    margin-top: 150px;
+    margin-bottom: 150px;
+}
+.container h2{
+    margin-left: 165px;
+    color: #080E49;
+}
+.card{
+    display: flex;
+    justify-content: center;
+}
+.card-content{
+    justify-content:space-between;
+    margin: 30px;
+    width: 250px;
+}
+.card-content img{
+    width: 250px;
+    height: 230px;
+    
+}
+.judul{
+    color: #080E49;
+    font-weight: bold;
+    text-align: center;
+}
+.deskripsi{
+    text-align: center;
+    color: black;
+}
+.card a:hover{
+    border: 1px solid #cacaca;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    background-color: #F9F5F4;
+}
+hr{
+    width: 90%;
+}
+.container-about{
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    height: 80vh;
+}
+.about{
+    display: flex;
+    align-items: center;
+}
+.about img{
+    width: 500px;
+    height: 450px;
+    margin-right: 20px;
+}
+.text {
+    max-width: 500px;
+}
+.about p{
+    font-size: 20px;
+    color: black;
+}
+.aboutus h2{
+    text-align: center;
+}
+footer{
+    background-color: #080E49;
+    color: white;
+    padding: 40px 20px;
+}
+.isifooter a{
+    color:white;
+}
+.isifooter{
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+}
+.isifooter h2{
+    margin-bottom: 20px;
+}
+.isifooter p{
+    color: #ffffff;
+}
+
