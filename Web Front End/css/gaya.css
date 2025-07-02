@@ -1,92 +1,128 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* Mengimpor font 'Poppins' dari Google Fonts dengan berbagai ketebalan */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/* Styling untuk seluruh body halaman */
 body {
-    font-family: "Poppins", sans-serif;
-    margin: 0;
-    background: #f9f9f9;
-    padding: 0;
+  font-family: "Poppins", sans-serif; /* Menggunakan font Poppins */
+  margin: 0; /* Menghilangkan margin bawaan */
+  background: #f9f9f9; /* Warna latar belakang halaman */
+  padding: 0; /* Menghilangkan padding bawaan */
 }
+
+/* Styling kontainer utama dengan class 'content' */
 .content {
-  max-width: 900px;
-  margin: auto;
-  background: white;
-  padding: 5%;
-  border-radius: 10px;
-  box-shadow: 0 0 15px rgba(0,0,0,0.2);
-  text-align: left; 
+  margin-top: 30px; /* Jarak atas dari halaman */
+  max-width: 900px; /* Lebar maksimum kontainer */
+  margin: auto; /* Posisi kontainer di tengah */
+  background: white; /* Latar belakang putih */
+  padding: 5%; /* Padding di semua sisi */
+  border-radius: 10px; /* Sudut membulat */
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /* Efek bayangan */
+  text-align: left; /* Teks rata kiri */
 }
+
+/* Styling gambar di dalam class 'content' */
 .content img {
-  width: 100%;
-  border-radius: 10px;
-  margin-bottom: 20px;
+  width: 100%; /* Lebar penuh sesuai kontainer */
+  border-radius: 10px; /* Sudut gambar membulat */
+  margin-top: 20px; /* Jarak atas gambar */
 }
+
+/* Styling judul utama di dalam class 'content' */
 .content h1 {
-  color: #2c3e50;
-  margin-bottom: 10px;
+  color: #2c3e50; /* Warna teks */
+  margin-bottom: 10px; /* Jarak bawah */
 }
+
+/* Styling paragraf di dalam class 'content' */
 .content p {
-  line-height: 1.8;
-  color: #555;
+  line-height: 1.8; /* Jarak antar baris */
+  color: #555; /* Warna teks */
 }
+
+/* Styling tautan kembali (Back link) */
 .back-link {
-  display: inline-block;
-  margin-top: 20px;
-  text-decoration: none;
-  background: #3498db;
-  color: white;
-  padding: 10px 20px;
-  border-radius: 5px;
+  display: inline-block; /* Agar bisa diberi padding/margin */
+  margin-top: 20px; /* Jarak atas */
+  text-decoration: none; /* Menghilangkan garis bawah */
+  background: #3498db; /* Warna latar */
+  color: white; /* Warna teks */
+  padding: 10px 20px; /* Ruang dalam */
+  border-radius: 5px; /* Sudut membulat */
 }
+
+/* Efek hover untuk back-link */
 .back-link:hover {
-  background: #2980b9;
+  background: #2980b9; /* Warna latar saat hover */
 }
+
+/* Kontainer untuk daftar paket perjalanan */
 .trip-packages {
-  margin-top: 40px;
+  margin-top: 40px; /* Jarak atas */
 }
+
+/* Judul section di dalam trip-packages */
 .trip-packages h2 {
   color: #2c3e50;
   margin-bottom: 20px;
 }
+
+/* Styling tiap paket perjalanan */
 .package {
-  border: 1px solid #ddd;
-  padding: 20px;
-  border-radius: 8px;
-  margin-bottom: 20px;
-  transition: box-shadow 0.3s;
+  border: 1px solid #ddd; /* Garis tepi */
+  padding: 20px; /* Ruang dalam */
+  border-radius: 8px; /* Sudut membulat */
+  margin-bottom: 20px; /* Jarak antar paket */
+  transition: box-shadow 0.3s; /* Transisi bayangan saat hover */
 }
+
+/* Efek hover untuk paket */
 .package:hover {
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Bayangan halus saat hover */
 }
+
+/* Judul paket perjalanan */
 .package h3 {
-  margin: 0 0 10px;
+  margin: 0 0 10px; /* Margin bawah */
   color: #333;
 }
+
+/* Paragraf deskripsi dalam paket */
 .package p {
   margin: 0;
   color: #666;
 }
+
+/* Harga paket perjalanan */
 .price {
   margin-top: 10px;
-  color: #27ae60;
-  font-weight: bold;
+  color: #27ae60; /* Warna hijau */
+  font-weight: bold; /* Huruf tebal */
 }
+
+/* Styling navigasi utama */
 nav {
-  position: fixed;
+  position: fixed; /* Tetap di atas layar */
   top: 0;
-  width: 100%;
-  background-color: #080E49;
+  width: 100%; /* Lebar penuh */
+  background-color: #080e49; /* Warna latar */
   color: white;
-  padding: 10px 30px;
+  padding: 10px 30px; /* Ruang dalam atas-bawah 10px, kiri-kanan 30px */
   display: flex;
-  justify-content: center;
-  align-items: center;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  justify-content: center; /* Posisi horizontal di tengah */
+  align-items: center; /* Posisi vertikal di tengah */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Bayangan */
 }
+
+/* Styling list menu di dalam nav */
 nav ul {
-  list-style-type: none;
+  list-style-type: none; /* Menghilangkan bullet */
   padding: 0;
   margin: 0;
-  display: flex;
+  display: flex; /* Ditata horizontal */
 }
+
+/* Styling link menu navigasi */
 nav ul li a {
   color: white;
   text-decoration: none;
@@ -96,16 +132,22 @@ nav ul li a {
   border-radius: 5px;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
+
+/* Efek hover untuk link menu */
 nav ul li a:hover {
-  color: #080E49;
-  background-color: white;
-  text-decoration: underline;
+  color: #080e49; /* Warna teks saat hover */
+  background-color: white; /* Latar putih saat hover */
+  text-decoration: underline; /* Tambahkan garis bawah saat hover */
 }
+
+/* Styling teks logo di nav */
 .logo-text {
   font-size: 26px;
   font-weight: bold;
   margin-right: 40px;
 }
+
+/* Styling tautan logo */
 .logo {
   text-decoration: none;
   color: white;
