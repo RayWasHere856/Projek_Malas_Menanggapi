@@ -1,309 +1,288 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
+/* BASE STYLE */
 body {
-    margin: 0;
-    font-family: 'Poppins', sans-serif;
-    background-color: #f4faff;
-    color: #333;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #f4faff;
+  color: #333;
 }
- a{
-    text-decoration: none;
- }
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 /* NAVIGATION */
 nav {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background-color: #4682B4;
-    color: white;
-    z-index: 999;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #4682B4;
+  color: white;
+  z-index: 999;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
-nav a{
-    color: white;
-}
+
 .nav-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-    max-width: 1200px;
-    margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  max-width: 1200px;
+  margin: auto;
 }
 
 .logo-text {
-    font-size: 26px;
-    font-weight: bold;
-    color: white;
-    text-decoration: none;
+  font-size: 26px;
+  font-weight: bold;
 }
 
 .menu-toggle {
-    display: none;
-    font-size: 28px;
-    cursor: pointer;
-    color: white;
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
 }
 
 .nav-links {
-    display: flex;
-    list-style: none;
-    gap: 20px;
+  display: flex;
+  list-style: none;
+  gap: 20px;
 }
 
 .nav-links li a {
-    color: white;
-    text-decoration: none;
-    font-size: 14px;
-    font-weight: 500;
-    padding: 6px 10px;
-    border-radius: 5px;
-    transition: background-color 0.3s ease, color 0.3s ease;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 6px 10px;
+  border-radius: 5px;
+  transition: 0.3s ease;
 }
 
 .nav-links li a:hover {
-    background-color: white;
-    color: #080E49;
-    text-decoration: underline;
+  background-color: white;
+  color: #080E49;
+  text-decoration: underline;
 }
 
 /* LANDING PAGE */
 .landing-page {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: #4682B4;
-    color: white;
-    text-align: center;
-    padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #4682B4;
+  color: white;
+  text-align: center;
+  padding: 20px;
 }
 
 .landing-page h1 {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
 }
 
 .landing-page p {
-    font-size: 1.25rem;
-    max-width: 600px;
+  font-size: 1.25rem;
+  max-width: 600px;
 }
 
 .landing-page a {
-    border: 1px solid white;
-    padding: 15px;
-    color: white;
-    border-radius: 15px;
-    width: 150px;
-    margin-top: 20px;
-    display: inline-block;
-    transition: 0.3s ease;
+  border: 1px solid white;
+  padding: 15px;
+  border-radius: 15px;
+  width: 150px;
+  margin-top: 20px;
+  display: inline-block;
+  transition: 0.3s ease;
 }
 
 .landing-page a:hover {
-    background-color: white;
-    color: #080E49;
+  background-color: white;
+  color: #080E49;
 }
 
-/* REKOMENDASI */
+/* CONTAINER */
 .container {
-    margin-top: 150px;
-    margin-bottom: 100px;
-    padding: 0 20px;
-    max-width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
+  margin: 150px auto 100px;
+  padding: 0 20px;
+  max-width: 1200px;
 }
 
-.container h2 {
-    text-align: center;
-    color: #4682B4;
-    font-size: 2rem;
-    margin-bottom: 30px;
+.container h2,
+.container .jelajah-deskripsi {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 50px;
 }
 
-.card {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-    gap: 30px;
-    padding: 0 10px;
+/* TOUR GRID */
+.tour-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 25px;
+  padding: 0 10px;
 }
 
-.card a {
-    color: inherit;
-    display: block;
-    transition: all 0.3s ease;
+.tour-card {
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+  position: relative;
+  height: 250px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: flex-end;
+  padding: 15px;
+  color: white;
 }
 
-.card a:hover {
-    border: 1px solid #cacaca;
-    box-shadow: rgba(0, 0, 0, 0.1) 3px 3px 8px;
-    background-color: #F9F5F4;
-    border-radius: 12px;
+.tour-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0,0,0,0.8);
+  opacity: 0.5;
 }
 
-.card-content {
-    overflow: hidden;
-    background-color: white;
-    border-radius: 12px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
-    transition: 0.3s ease;
+.tour-card a {
+  display: block;
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  z-index: 1;
 }
 
-.card-content img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    border-top-left-radius: 12px;
-    border-top-right-radius: 12px;
+.overlay-content {
+  position: absolute;
+  bottom: 0; left: 0;
+  padding: 20px;
+  width: 100%;
+  z-index: 2;
+  background: linear-gradient(to top, rgba(0,0,0,0.7), rgba(0,0,0,0));
+  border-radius: 0 0 12px 12px;
 }
 
-.judul {
-    color: #4682B4;
-    font-weight: 600;
-    font-size: 1.2rem;
-    margin: 10px 15px 5px;
-    text-align: center;
+.overlay-content h3 {
+  font-size: 1.5rem;
+  margin-bottom: 5px;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
 }
 
-.deskripsi {
-    font-size: 0.95rem;
-    color: #444;
-    margin: 0 15px 20px;
-    text-align: center;
-    line-height: 1.5;
+.overlay-content p {
+  font-size: 1rem;
+  margin: 0;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
 }
 
-/* TENTANG KAMI */
+
+/* ABOUT US */
 .container-about {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 40px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
 }
 
 .about {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
-    max-width: 1100px;
-    align-items: center;
-    justify-content: center;
-    text-align: left;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  max-width: 1100px;
+  justify-content: center;
+  text-align: left;
 }
 
 .about img {
-    width: 100%;
-    max-width: 500px;
-    height: auto;
-    border-radius: 12px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .text {
-    max-width: 500px;
+  max-width: 500px;
 }
 
 .deskripsi-about {
-    font-size: 1.1rem;
-    line-height: 1.6;
-    color: #333;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #333;
 }
 
 .aboutus h2 {
-    text-align: center;
-    font-size: 2rem;
-    margin-bottom: 30px;
-    color: #4682B4;
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #4682B4;
 }
 
 /* FOOTER */
 footer {
-    background-color: #4682B4;
-    color: white;
-    padding: 40px 20px;
-    text-align: center;
-}
-
-.isifooter {
-    max-width: 1200px;
-    margin: auto;
+  background-color: #4682B4;
+  color: white;
+  padding: 40px 20px;
+  text-align: center;
 }
 
 .isifooter a {
-    color: white;
+  color: white;
 }
 
-.isifooter h2 {
-    margin-bottom: 20px;
+/* RESPONSIVE */
+@media (max-width: 1024px) {
+  .promo-card {
+    flex: 0 0 calc(50% - 20px);
+  }
 }
 
-.isifooter p {
-    color: #ffffff;
-}
-
-/* RESPONSIVE NAVIGATION */
 @media (max-width: 768px) {
-    .menu-toggle {
-        display: block;
-    }
+  .menu-toggle {
+    display: block;
+  }
 
-    .nav-links {
-        display: none;
-        flex-direction: column;
-        background-color: #4682B4;
-        width: 100%;
-        position: absolute;
-        top: 45px;
-        left: 0;
-        padding: 10px 0;
-        text-align: center;
-    }
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background-color: #4682B4;
+    position: absolute;
+    top: 45px;
+    left: 0;
+    width: 100%;
+    padding: 10px 0;
+    text-align: center;
+  }
 
-    .nav-links.active {
-        display: flex;
-    }
+  .nav-links.active {
+    display: flex;
+  }
 
-    .nav-links li {
-        margin: 10px 0;
-    }
+  .tour-grid {
+    grid-template-columns: 1fr;
+  }
 
-    .nav-container {
-        flex-direction: row;
-        align-items: center;
-    }
+  .promo-card {
+    flex: 0 0 calc(100% - 20px);
+  }
 
-    .landing-page h1 {
-        font-size: 2rem;
-    }
+  .landing-page h1 {
+    font-size: 2rem;
+  }
 
-    .landing-page p {
-        font-size: 1rem;
-    }
+  .landing-page p,
+  .promotions-description {
+    font-size: 1rem;
+  }
 
-    .card-content img {
-        height: 160px;
-    }
+  .about {
+    flex-direction: column;
+    text-align: center;
+  }
 
-    .judul {
-        font-size: 1rem;
-    }
+  .text {
+    padding: 0 20px;
+  }
 
-    .deskripsi {
-        font-size: 0.9rem;
-    }
-
-    .about {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .about img {
-        max-width: 100%;
-    }
-
-    .text {
-        padding: 0 20px;
-    }
+  .price .value {
+    font-size: 3rem;
+  }
 }
