@@ -6,45 +6,54 @@ body {
     background-color: #f4faff;
     color: #333;
 }
-
-a {
+ a{
     text-decoration: none;
-}
-
+ }
+/* NAVIGATION */
 nav {
     position: fixed;
     top: 0;
     width: 100%;
     background-color: #4682B4;
-    color: #F0F8FF;
-    padding: 10px 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    color: white;
     z-index: 999;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+nav a{
+    color: white;
+}
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    max-width: 1200px;
+    margin: auto;
 }
 
 .logo-text {
     font-size: 26px;
     font-weight: bold;
-    margin-right: 40px;
-}
-
-.logo {
+    color: white;
     text-decoration: none;
+}
+
+.menu-toggle {
+    display: none;
+    font-size: 28px;
+    cursor: pointer;
     color: white;
 }
 
-nav ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
+.nav-links {
     display: flex;
+    list-style: none;
+    gap: 20px;
 }
 
-nav ul li a {
+.nav-links li a {
     color: white;
+    text-decoration: none;
     font-size: 14px;
     font-weight: 500;
     padding: 6px 10px;
@@ -52,12 +61,13 @@ nav ul li a {
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-nav ul li a:hover {
-    color: #080E49;
+.nav-links li a:hover {
     background-color: white;
+    color: #080E49;
     text-decoration: underline;
 }
 
+/* LANDING PAGE */
 .landing-page {
     display: flex;
     flex-direction: column;
@@ -94,9 +104,9 @@ nav ul li a:hover {
 .landing-page a:hover {
     background-color: white;
     color: #080E49;
-    transition: 0.3s ease;
 }
 
+/* REKOMENDASI */
 .container {
     margin-top: 150px;
     margin-bottom: 100px;
@@ -165,10 +175,7 @@ nav ul li a:hover {
     line-height: 1.5;
 }
 
-hr {
-    width: 90%;
-}
-
+/* TENTANG KAMI */
 .container-about {
     display: flex;
     justify-content: center;
@@ -211,8 +218,9 @@ hr {
     color: #4682B4;
 }
 
+/* FOOTER */
 footer {
-    background-color: #080E49;
+    background-color: #4682B4;
     color: white;
     padding: 40px 20px;
     text-align: center;
@@ -233,4 +241,69 @@ footer {
 
 .isifooter p {
     color: #ffffff;
+}
+
+/* RESPONSIVE NAVIGATION */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        background-color: #4682B4;
+        width: 100%;
+        position: absolute;
+        top: 45px;
+        left: 0;
+        padding: 10px 0;
+        text-align: center;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+
+    .nav-container {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .landing-page h1 {
+        font-size: 2rem;
+    }
+
+    .landing-page p {
+        font-size: 1rem;
+    }
+
+    .card-content img {
+        height: 160px;
+    }
+
+    .judul {
+        font-size: 1rem;
+    }
+
+    .deskripsi {
+        font-size: 0.9rem;
+    }
+
+    .about {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about img {
+        max-width: 100%;
+    }
+
+    .text {
+        padding: 0 20px;
+    }
 }
