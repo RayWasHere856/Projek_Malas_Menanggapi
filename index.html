@@ -1,259 +1,319 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Website Pariwisata</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Website Pariwisata</title>
-  <link rel="stylesheet" href="css/style.css" />
-</head>
-
-<body>
-  <nav>
-    <div class="nav-container">
-      <span class="logo-text"><a href="index.html" class="logo">Paradise</a></span>
-      <div class="menu-toggle" id="menu-toggle">
-        ☰
+  <body>
+    <nav>
+      <div class="nav-container">
+        <span class="logo-text"
+          ><a href="index.html" class="logo">Paradise</a></span
+        >
+        <div class="menu-toggle" id="menu-toggle">☰</div>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="#beranda">Beranda</a></li>
+          <li><a href="#jelajah">Jelajahi</a></li>
+          <li><a href="#aboutus">Tentang Kami</a></li>
+          <li><a href="#kaki">Hubungi Kami</a></li>
+        </ul>
       </div>
-      <ul class="nav-links" id="nav-links">
-        <li><a href="#beranda">Beranda</a></li>
-        <li><a href="#jelajah">Jelajahi</a></li>
-        <li><a href="#aboutus">Tentang Kami</a></li>
-        <li><a href="#kaki">Hubungi Kami</a></li>
-      </ul>
-    </div>
-  </nav>
+    </nav>
 
-  <section class="landing-page" id="beranda">
-    <h1>Temukan Semua Keindahan Di Setiap Sudut Indonesia</h1>
-    <p>Jelajahi destinasi pariwisata yang cantik, indah, dan rasakan petualangan yang tak terlupakan. Ayo mulai
-      perjalananmu!</p>
-    <a href="#jelajah">Jelajahi Sekarang!</a>
-  </section>
+    <section class="landing-page" id="beranda">
+      <h1>Temukan Semua Keindahan Di Setiap Sudut Indonesia</h1>
+      <p>
+        Jelajahi destinasi pariwisata yang cantik, indah, dan rasakan
+        petualangan yang tak terlupakan. Ayo mulai perjalananmu!
+      </p>
+      <a href="#jelajah">Jelajahi Sekarang!</a>
+    </section>
 
-  <section class="container" id="jelajah">
-    <h2>Jelajahi Dunia</h2>
-    <p class="jelajah-deskripsi">Temukan destinasi terbaik dari berbagai penjuru Indonesia, mulai dari budaya, alam,
-      hingga keindahan bawah lautnya.</p>
+    <section class="container" id="jelajah">
+      <h2>Jelajahi Dunia</h2>
+      <p class="jelajah-deskripsi">
+        Temukan destinasi terbaik dari berbagai penjuru Indonesia, mulai dari
+        budaya, alam, hingga keindahan bawah lautnya.
+      </p>
 
-    <div class="tour-grid">
+      <div class="tour-grid">
+        <div class="tour-card" style="background-image: url('Images/Bali.jpg')">
+          <a href="bali.html">
+            <div class="overlay-content">
+              <h3>Bali</h3>
+              <p>4 Tours Menu</p>
+            </div>
+          </a>
+        </div>
 
-      <div class="tour-card" style="background-image: url('Images/Bali.jpg');"> <a href="bali.html">
-          <div class="overlay-content">
-            <h3>Bali</h3>
-            <p>4 Tours Menu</p>
-          </div>
-        </a>
+        <div
+          class="tour-card"
+          style="background-image: url('Images/Papua.jpg')"
+        >
+          <a href="papua.html">
+            <div class="overlay-content">
+              <h3>Papua</h3>
+              <p>4 Tours Menu</p>
+            </div>
+          </a>
+        </div>
+
+        <div
+          class="tour-card"
+          style="background-image: url('Images/Kalimantan.jpg')"
+        >
+          <a href="kalimantan.html">
+            <div class="overlay-content">
+              <h3>Kalimantan</h3>
+              <p>4 Tours Menu</p>
+            </div>
+          </a>
+        </div>
+
+        <div
+          class="tour-card"
+          style="background-image: url('Images/Sumatra.jpg')"
+        >
+          <a href="sumatera.html">
+            <div class="overlay-content">
+              <h3>Sumatera Barat</h3>
+              <p>4 Tours Menu</p>
+            </div>
+          </a>
+        </div>
+
+        <div
+          class="tour-card"
+          style="background-image: url('Images/sulawesi\ selatan.jpg')"
+        >
+          <a href="sulawesi.html">
+            <div class="overlay-content">
+              <h3>Sulawesi Selatan</h3>
+              <p>4 Tours Menu</p>
+            </div>
+          </a>
+        </div>
+        <div
+          class="tour-card"
+          style="background-image: url('Images/NusaTenggaraTimur.jpg')"
+        >
+          <a href="nusatenggara.html">
+            <div class="overlay-content">
+              <h3>Nusa Tenggara Timur</h3>
+              <p>4 Tours Menu</p>
+            </div>
+          </a>
+        </div>
       </div>
-
-      <div class="tour-card" style="background-image: url('Images/Papua.jpg');"> <a href="papua.html">
-          <div class="overlay-content">
-            <h3>Papua</h3>
-            <p>4 Tours Menu</p>
-          </div>
-        </a>
-      </div>
-
-      <div class="tour-card" style="background-image: url('Images/Kalimantan.jpg');"> <a href="kalimantan.html">
-          <div class="overlay-content">
-            <h3>Kalimantan</h3>
-            <p>4 Tours Menu</p>
-          </div>
-        </a>
-      </div>
-
-      <div class="tour-card" style="background-image: url('Images/Sumatra.jpg');"> <a href="sumatera.html">
-          <div class="overlay-content">
-            <h3>Sumatera Barat</h3>
-            <p>4 Tours Menu</p>
-          </div>
-        </a>
-      </div>
-
-      <div class="tour-card" style="background-image: url('Images/Sulawesi.jpg');"> <a href="sulawesi.html">
-          <div class="overlay-content">
-            <h3>Sulawesi Selatan</h3>
-            <p>4 Tours Menu</p>
-          </div>
-        </a>
-      </div>
-      <div class="tour-card" style="background-image: url('Images/NusaTenggara.jpg');"> <a href="nusatenggara.html">
-          <div class="overlay-content">
-            <h3>Nusa Tenggara Barat</h3>
-            <p>4 Tours Menu</p>
-          </div>
-        </a>
-      </div>
-
-    </div>
-  </section>
+    </section>
 
     <section class="container" id="promotions">
-    <div class="promotions-header">
-      <h2>Special Offers & Promotions</h2>
-      <p class="promotions-description">Jangan lewatkan penawaran eksklusif dan promosi menarik dari kami! Segera
-        manfaatkan kesempatan emas ini untuk mewujudkan liburan impian Anda dengan keuntungan berlimpah yang
-        menanti!</p>
-      <a href="#" class="view-more">VIEW MORE →</a>
-    </div>
-
-    <div class="carousel-container">
-      <div class="carousel-track">
-        <div class="promo-card">
-          <img src="Images/japan.jpg" alt="Japan Tour">
-          <div class="card-overlay">
-            <img src="Images/bayubuana-logo.png" alt="Bayu Buana Logo" class="brand-logo">
-            <div class="duration-location">07D/05N JAPAN</div>
-            <div class="price">
-              <span class="currency">IDR</span>
-              <span class="value">23,2</span>
-              <span class="suffix">Jt<sup>*</sup></span>
-            </div>
-          </div>
-        </div>
-
-        <div class="promo-card">
-          <img src="Images/australia.jpg" alt="Australia Tour">
-          <div class="card-overlay">
-            <img src="Images/bayubuana-logo.png" alt="Bayu Buana Logo" class="brand-logo">
-            <div class="duration-location">05D/03N AUSTRALIA</div>
-            <div class="price">
-              <span class="currency">IDR</span>
-              <span class="value">14,2</span>
-              <span class="suffix">Jt<sup>*</sup></span>
-            </div>
-          </div>
-        </div>
-
-        <div class="promo-card">
-          <img src="Images/united-states.jpg" alt="United States Tour">
-          <div class="card-overlay">
-            <img src="Images/bayubuana-logo.png" alt="Bayu Buana Logo" class="brand-logo">
-            <div class="duration-location">11D/08N UNITED STATES</div>
-            <div class="price">
-              <span class="currency">IDR</span>
-              <span class="value">43,8</span>
-              <span class="suffix">Jt<sup>*</sup></span>
-            </div>
-          </div>
-        </div>
-
-        <div class="promo-card">
-          <img src="Images/korea.jpg" alt="Korea Tour">
-          <div class="card-overlay">
-            <img src="Images/bayubuana-logo.png" alt="Bayu Buana Logo" class="brand-logo">
-            <div class="duration-location">06D/04N KOREA</div>
-            <div class="price">
-              <span class="currency">IDR</span>
-              <span class="value">18,5</span>
-              <span class="suffix">Jt<sup>*</sup></span>
-            </div>
-          </div>
-        </div>
-
-        <div class="promo-card">
-          <img src="Images/thailand.jpg" alt="Thailand Tour">
-          <div class="card-overlay">
-            <img src="Images/bayubuana-logo.png" alt="Bayu Buana Logo" class="brand-logo">
-            <div class="duration-location">04D/03N THAILAND</div>
-            <div class="price">
-              <span class="currency">IDR</span>
-              <span class="value">7,9</span>
-              <span class="suffix">Jt<sup>*</sup></span>
-            </div>
-          </div>
-        </div>
-
-        <div class="promo-card">
-          <img src="Images/ini testings.jpg" alt="Egypt Tour">
-          <div class="card-overlay">
-            <img src="Images/bayubuana-logo.png" alt="Bayu Buana Logo" class="brand-logo">
-            <div class="duration-location">09D/07N EGYPT</div>
-            <div class="price">
-              <span class="currency">IDR</span>
-              <span class="value">35,0</span>
-              <span class="suffix">Jt<sup>*</sup></span>
-            </div>
-          </div>
-        </div>
-
-        <div class="promo-card">
-          <img src="Images/vietnam.jpg" alt="Vietnam Tour">
-          <div class="card-overlay">
-            <img src="Images/bayubuana-logo.png" alt="Bayu Buana Logo" class="brand-logo">
-            <div class="duration-location">05D/04N VIETNAM</div>
-            <div class="price">
-              <span class="currency">IDR</span>
-              <span class="value">9,5</span>
-              <span class="suffix">Jt<sup>*</sup></span>
-            </div>
-          </div>
-        </div>
-
-        <div class="promo-card">
-          <img src="Images/italy.jpg" alt="Italy Tour">
-          <div class="card-overlay">
-            <img src="Images/bayubuana-logo.png" alt="Bayu Buana Logo" class="brand-logo">
-            <div class="duration-location">10D/08N ITALY</div>
-            <div class="price">
-              <span class="currency">IDR</span>
-              <span class="value">48,0</span>
-              <span class="suffix">Jt<sup>*</sup></span>
-            </div>
-          </div>
-        </div>
-
-        <div class="promo-card">
-          <img src="Images/new-zealand.jpg" alt="New Zealand Tour">
-          <div class="card-overlay">
-            <img src="Images/bayubuana-logo.png" alt="Bayu Buana Logo" class="brand-logo">
-            <div class="duration-location">08D/06N NEW ZEALAND</div>
-            <div class="price">
-              <span class="currency">IDR</span>
-              <span class="value">30,0</span>
-              <span class="suffix">Jt<sup>*</sup></span>
-            </div>
-          </div>
-        </div>
-
+      <div class="promotions-header">
+        <h2>Special Offers & Promotions</h2>
+        <p class="promotions-description">
+          Jangan lewatkan penawaran eksklusif dan promosi menarik dari kami!
+          Segera manfaatkan kesempatan emas ini untuk mewujudkan liburan impian
+          Anda dengan keuntungan berlimpah yang menanti!
+        </p>
+        <a href="#" class="view-more">VIEW MORE →</a>
       </div>
-    </div>
 
-    <div class="carousel-navigation">
-      <button class="nav-button prev-button">&lt;</button>
-      <button class="nav-button next-button">&gt;</button>
-    </div>
-  </section>
+      <div class="carousel-container">
+        <div class="carousel-track">
+          <div class="promo-card">
+            <img src="Images/japan.jpg" alt="Japan Tour" />
+            <div class="card-overlay">
+              <img
+                src="Images/bayubuana-logo.png"
+                alt="Bayu Buana Logo"
+                class="brand-logo"
+              />
+              <div class="duration-location">07D/05N JAPAN</div>
+              <div class="price">
+                <span class="currency">IDR</span>
+                <span class="value">23,2</span>
+                <span class="suffix">Jt<sup>*</sup></span>
+              </div>
+            </div>
+          </div>
 
-  <section>
-    <hr />
-    <div class="aboutus" id="aboutus">
-      <h2>Tentang Kami</h2>
-      <div class="container-about">
-        <div class="about">
-          <img src="Images/Paradise.png" alt="Paradise" />
-          <div class="text">
-            <h3>Paradise</h3>
-            <p class="deskripsi-about">
-              Selamat datang di website kami, teman perjalanan anda menuju petualangan yang sangat
-              menyenangkan. Kami adalah platform traveling yang bersedia untuk membantu anda
-              merencanakan, menemukan, dan menikmati liburan santai hingga ekspedisi penuh tantangan.
-            </p>
+          <div class="promo-card">
+            <img src="Images/australia.jpg" alt="Australia Tour" />
+            <div class="card-overlay">
+              <img
+                src="Images/bayubuana-logo.png"
+                alt="Bayu Buana Logo"
+                class="brand-logo"
+              />
+              <div class="duration-location">05D/03N AUSTRALIA</div>
+              <div class="price">
+                <span class="currency">IDR</span>
+                <span class="value">14,2</span>
+                <span class="suffix">Jt<sup>*</sup></span>
+              </div>
+            </div>
+          </div>
+
+          <div class="promo-card">
+            <img src="Images/united-states.jpg" alt="United States Tour" />
+            <div class="card-overlay">
+              <img
+                src="Images/bayubuana-logo.png"
+                alt="Bayu Buana Logo"
+                class="brand-logo"
+              />
+              <div class="duration-location">11D/08N UNITED STATES</div>
+              <div class="price">
+                <span class="currency">IDR</span>
+                <span class="value">43,8</span>
+                <span class="suffix">Jt<sup>*</sup></span>
+              </div>
+            </div>
+          </div>
+
+          <div class="promo-card">
+            <img src="Images/korea.jpg" alt="Korea Tour" />
+            <div class="card-overlay">
+              <img
+                src="Images/bayubuana-logo.png"
+                alt="Bayu Buana Logo"
+                class="brand-logo"
+              />
+              <div class="duration-location">06D/04N KOREA</div>
+              <div class="price">
+                <span class="currency">IDR</span>
+                <span class="value">18,5</span>
+                <span class="suffix">Jt<sup>*</sup></span>
+              </div>
+            </div>
+          </div>
+
+          <div class="promo-card">
+            <img src="Images/thailand.jpg" alt="Thailand Tour" />
+            <div class="card-overlay">
+              <img
+                src="Images/bayubuana-logo.png"
+                alt="Bayu Buana Logo"
+                class="brand-logo"
+              />
+              <div class="duration-location">04D/03N THAILAND</div>
+              <div class="price">
+                <span class="currency">IDR</span>
+                <span class="value">7,9</span>
+                <span class="suffix">Jt<sup>*</sup></span>
+              </div>
+            </div>
+          </div>
+
+          <div class="promo-card">
+            <img src="Images/ini testings.jpg" alt="Egypt Tour" />
+            <div class="card-overlay">
+              <img
+                src="Images/bayubuana-logo.png"
+                alt="Bayu Buana Logo"
+                class="brand-logo"
+              />
+              <div class="duration-location">09D/07N EGYPT</div>
+              <div class="price">
+                <span class="currency">IDR</span>
+                <span class="value">35,0</span>
+                <span class="suffix">Jt<sup>*</sup></span>
+              </div>
+            </div>
+          </div>
+
+          <div class="promo-card">
+            <img src="Images/vietnam.jpg" alt="Vietnam Tour" />
+            <div class="card-overlay">
+              <img
+                src="Images/bayubuana-logo.png"
+                alt="Bayu Buana Logo"
+                class="brand-logo"
+              />
+              <div class="duration-location">05D/04N VIETNAM</div>
+              <div class="price">
+                <span class="currency">IDR</span>
+                <span class="value">9,5</span>
+                <span class="suffix">Jt<sup>*</sup></span>
+              </div>
+            </div>
+          </div>
+
+          <div class="promo-card">
+            <img src="Images/italy.jpg" alt="Italy Tour" />
+            <div class="card-overlay">
+              <img
+                src="Images/bayubuana-logo.png"
+                alt="Bayu Buana Logo"
+                class="brand-logo"
+              />
+              <div class="duration-location">10D/08N ITALY</div>
+              <div class="price">
+                <span class="currency">IDR</span>
+                <span class="value">48,0</span>
+                <span class="suffix">Jt<sup>*</sup></span>
+              </div>
+            </div>
+          </div>
+
+          <div class="promo-card">
+            <img src="Images/new-zealand.jpg" alt="New Zealand Tour" />
+            <div class="card-overlay">
+              <img
+                src="Images/bayubuana-logo.png"
+                alt="Bayu Buana Logo"
+                class="brand-logo"
+              />
+              <div class="duration-location">08D/06N NEW ZEALAND</div>
+              <div class="price">
+                <span class="currency">IDR</span>
+                <span class="value">30,0</span>
+                <span class="suffix">Jt<sup>*</sup></span>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
 
-  <footer>
-    <div class="isifooter" id="kaki">
-      <h2>Kontak Kami</h2>
-      <p>Email: <a href="#">rayhanalamsyah866@gmail.com</a></p>
-      <p>Telepon: <a href="tel:+62123456789">+62 123 4567 89</a></p>
-      <p>Alamat: Jl.Thamrin No.140, Medan.</p>
-    </div>
-  </footer>
-  <script src="javascript/script.js"></script>
-</body>
+      <div class="carousel-navigation">
+        <button class="nav-button prev-button">&lt;</button>
+        <button class="nav-button next-button">&gt;</button>
+      </div>
+    </section>
 
+    <section>
+      <hr />
+      <div class="aboutus" id="aboutus">
+        <h2>Tentang Kami</h2>
+        <div class="container-about">
+          <div class="about">
+            <img src="Images/Paradise.png" alt="Paradise" />
+            <div class="text">
+              <h3>Paradise</h3>
+              <p class="deskripsi-about">
+                Selamat datang di website kami, teman perjalanan anda menuju
+                petualangan yang sangat menyenangkan. Kami adalah platform
+                traveling yang bersedia untuk membantu anda merencanakan,
+                menemukan, dan menikmati liburan santai hingga ekspedisi penuh
+                tantangan.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="isifooter" id="kaki">
+        <h2>Kontak Kami</h2>
+        <p>Email: <a href="#">rayhanalamsyah866@gmail.com</a></p>
+        <p>Telepon: <a href="tel:+62123456789">+62 123 4567 89</a></p>
+        <p>Alamat: Jl.Thamrin No.140, Medan.</p>
+      </div>
+    </footer>
+    <script src="javascript/script.js"></script>
+  </body>
 </html>
