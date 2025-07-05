@@ -1,277 +1,249 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Website Pariwisata</title>
-    <link rel="stylesheet" href="css/style.css" />
-  </head>
 
-  <body>
-    <nav>
-      <div class="nav-container">
-        <span class="logo-text"
-          ><a href="index.html" class="logo">Paradise</a></span
-        >
-        <div class="menu-toggle" id="menu-toggle">☰</div>
-        <ul class="nav-links" id="nav-links">
-          <li><a href="#beranda">Beranda</a></li>
-          <li><a href="#jelajah">Jelajahi</a></li>
-          <li><a href="#aboutus">Tentang Kami</a></li>
-          <li><a href="#kaki">Hubungi Kami</a></li>
-        </ul>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Website Pariwisata</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <nav>
+    <div class="nav-container">
+      <span class="logo-text"><a href="index.html" class="logo">Paradise</a></span>
+      <div class="menu-toggle" id="menu-toggle">☰</div>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#beranda">Beranda</a></li>
+        <li><a href="#jelajah">Jelajahi</a></li>
+        <li><a href="#aboutus">Tentang Kami</a></li>
+        <li><a href="#kaki">Hubungi Kami</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="landing-page" id="beranda">
+    <h1>Temukan Semua Keindahan Di Setiap Sudut Indonesia</h1>
+    <p>
+      Jelajahi destinasi pariwisata yang cantik, indah, dan rasakan
+      petualangan yang tak terlupakan. Ayo mulai perjalananmu!
+    </p>
+    <a href="#jelajah">Jelajahi Sekarang!</a>
+  </section>
+
+  <section class="container" id="jelajah">
+    <h2>Jelajahi Dunia</h2>
+    <p class="jelajah-deskripsi">
+      Temukan destinasi terbaik dari berbagai penjuru Indonesia, mulai dari
+      budaya, alam, hingga keindahan bawah lautnya.
+    </p>
+
+    <div class="tour-grid">
+      <div class="tour-card" style="background-image: url('Images/Bali.jpg')">
+        <a href="bali.html">
+          <div class="overlay-content">
+            <h3>Bali</h3>
+            <p>4 Tours Menu</p>
+          </div>
+        </a>
       </div>
-    </nav>
 
-    <section class="landing-page" id="beranda">
-      <h1>Temukan Semua Keindahan Di Setiap Sudut Indonesia</h1>
-      <p>
-        Jelajahi destinasi pariwisata yang cantik, indah, dan rasakan
-        petualangan yang tak terlupakan. Ayo mulai perjalananmu!
+      <div class="tour-card" style="background-image: url('Images/Papua.jpg')">
+        <a href="papua.html">
+          <div class="overlay-content">
+            <h3>Papua</h3>
+            <p>4 Tours Menu</p>
+          </div>
+        </a>
+      </div>
+
+      <div class="tour-card" style="background-image: url('Images/Kalimantan.jpg')">
+        <a href="kalimantan.html">
+          <div class="overlay-content">
+            <h3>Kalimantan</h3>
+            <p>4 Tours Menu</p>
+          </div>
+        </a>
+      </div>
+
+      <div class="tour-card" style="background-image: url('Images/Sumatra.jpg')">
+        <a href="sumbar.html">
+          <div class="overlay-content">
+            <h3>Sumatera Barat</h3>
+            <p>4 Tours Menu</p>
+          </div>
+        </a>
+      </div>
+
+      <div class="tour-card" style="background-image: url('Images/sulawesi\ selatan.jpg')">
+        <a href="sulawesi.html">
+          <div class="overlay-content">
+            <h3>Sulawesi Selatan</h3>
+            <p>4 Tours Menu</p>
+          </div>
+        </a>
+      </div>
+      <div class="tour-card" style="background-image: url('Images/NusaTenggaraTimur.jpg')">
+        <a href="ntt.html">
+          <div class="overlay-content">
+            <h3>Nusa Tenggara Timur</h3>
+            <p>4 Tours Menu</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="container" id="promotions">
+    <div class="promotions-header">
+      <h2>Penawaran Spesial</h2>
+      <p class="promotions-description">
+        Jangan lewatkan penawaran eksklusif dan promosi menarik dari kami!
+        Segera manfaatkan kesempatan emas ini untuk mewujudkan liburan impian
+        Anda dengan keuntungan berlimpah yang menanti!
       </p>
-      <a href="#jelajah">Jelajahi Sekarang!</a>
-    </section>
+    </div>
 
-    <section class="container" id="jelajah">
-      <h2>Jelajahi Dunia</h2>
-      <p class="jelajah-deskripsi">
-        Temukan destinasi terbaik dari berbagai penjuru Indonesia, mulai dari
-        budaya, alam, hingga keindahan bawah lautnya.
-      </p>
-
-      <div class="tour-grid">
-        <div class="tour-card" style="background-image: url('Images/Bali.jpg')">
-          <a href="bali.html">
-            <div class="overlay-content">
-              <h3>Bali</h3>
-              <p>4 Tours Menu</p>
+    <div class="carousel-container">
+      <div class="carousel-track">
+        <div class="promo-card">
+          <img src="Images/pantai kuta-bali.jpg" alt="Bali Tour" />
+          <div class="card-overlay">
+            <div class="duration-location">Pantai Kuta</div>
+            <div class="price">
+              <span class="currency">Rp</span>
+              <span class="value">1.600.000</span>
             </div>
-          </a>
+          </div>
         </div>
 
-        <div
-          class="tour-card"
-          style="background-image: url('Images/Papua.jpg')"
-        >
-          <a href="papua.html">
-            <div class="overlay-content">
-              <h3>Papua</h3>
-              <p>4 Tours Menu</p>
+        <div class="promo-card">
+          <img src="Images/raja ampat-papua.jpg" alt="Papua Tour" />
+          <div class="card-overlay">
+            <div class="duration-location">Raja Ampat</div>
+            <div class="price">
+              <span class="currency">Rp</span>
+              <span class="value">3.500.000</span>
             </div>
-          </a>
+          </div>
         </div>
 
-        <div
-          class="tour-card"
-          style="background-image: url('Images/Kalimantan.jpg')"
-        >
-          <a href="kalimantan.html">
-            <div class="overlay-content">
-              <h3>Kalimantan</h3>
-              <p>4 Tours Menu</p>
+        <div class="promo-card">
+          <img src="Images/taman nasional tanjung puting-kalimantan.jpg" alt="Kalimantan Tour" />
+          <div class="card-overlay">
+            <div class="duration-location">Taman Nasional Tanjung Puting</div>
+            <div class="price">
+              <span class="currency">Rp</span>
+              <span class="value">2.750.000</span>
             </div>
-          </a>
+          </div>
         </div>
 
-        <div
-          class="tour-card"
-          style="background-image: url('Images/Sumatra.jpg')"
-        >
-          <a href="sumbar.html">
-            <div class="overlay-content">
-              <h3>Sumatera Barat</h3>
-              <p>4 Tours Menu</p>
+        <div class="promo-card">
+          <img src="Images/jam gadang-sumbar.jpg" alt="sumatera barat tour" />
+          <div class="card-overlay">
+            <div class="duration-location">Jam Gadang</div>
+            <div class="price">
+              <span class="currency">Rp</span>
+              <span class="value">2.500.000</span>
             </div>
-          </a>
+          </div>
         </div>
 
-        <div
-          class="tour-card"
-          style="background-image: url('Images/sulawesi\ selatan.jpg')"
-        >
-          <a href="sulawesi.html">
-            <div class="overlay-content">
-              <h3>Sulawesi Selatan</h3>
-              <p>4 Tours Menu</p>
+        <div class="promo-card">
+          <img src="Images/pantai losari-sulawesi selatan.jpg" alt="sulawesi selatan Tour" />
+          <div class="card-overlay">
+            <div class="duration-location">Pantai Losari</div>
+            <div class="price">
+              <span class="currency">Rp</span>
+              <span class="value">300.000</span>
             </div>
-          </a>
+          </div>
         </div>
-        <div
-          class="tour-card"
-          style="background-image: url('Images/NusaTenggaraTimur.jpg')"
-        >
-          <a href="ntt.html">
-            <div class="overlay-content">
-              <h3>Nusa Tenggara Timur</h3>
-              <p>4 Tours Menu</p>
+
+        <div class="promo-card">
+          <img src="Images/taman nasional komodo-ntt.jpg" alt="NTT tour" />
+          <div class="card-overlay">
+            <div class="duration-location">Taman Nasional Komodo</div>
+            <div class="price">
+              <span class="currency">Rp</span>
+              <span class="value">2.900.000</span>
             </div>
-          </a>
+          </div>
         </div>
-      </div>
-    </section>
 
-    <section class="container" id="promotions">
-      <div class="promotions-header">
-        <h2>Special Offers & Promotions</h2>
-        <p class="promotions-description">
-          Jangan lewatkan penawaran eksklusif dan promosi menarik dari kami!
-          Segera manfaatkan kesempatan emas ini untuk mewujudkan liburan impian
-          Anda dengan keuntungan berlimpah yang menanti!
-        </p>
-        <a href="#" class="view-more">VIEW MORE →</a>
-      </div>
-
-      <div class="carousel-container">
-        <div class="carousel-track">
-          <div class="promo-card">
-            <img src="Images/pantai kuta-bali.jpg" alt="Bali Tour" />
-            <div class="card-overlay">
-              <div class="duration-location">Pantai Kuta</div>
-              <div class="price">
-                <span class="currency">Rp</span>
-                <span class="value">1.600.000</span>
-              </div>
+        <div class="promo-card">
+          <img src="Images/pantai pandawa-bali.jpg" alt="Bali Tour" />
+          <div class="card-overlay">
+            <div class="duration-location">Pantai Pandawa</div>
+            <div class="price">
+              <span class="currency">Rp</span>
+              <span class="value">1.780.000</span>
             </div>
           </div>
+        </div>
 
-          <div class="promo-card">
-            <img src="Images/raja ampat-papua.jpg" alt="Papua Tour" />
-            <div class="card-overlay">
-              <div class="duration-location">Raja Ampat</div>
-              <div class="price">
-                <span class="currency">Rp</span>
-                <span class="value">3.500.000</span>
-              </div>
+        <div class="promo-card">
+          <img src="Images/labuan cermin-kalimantan.jpg" alt="Kalimantan Tour" />
+          <div class="card-overlay">
+            <div class="duration-location">Labuan Cermin</div>
+            <div class="price">
+              <span class="currency">Rp</span>
+              <span class="value">850.000</span>
             </div>
           </div>
+        </div>
 
-          <div class="promo-card">
-            <img
-              src="Images/taman nasional tanjung puting-kalimantan.jpg"
-              alt="Kalimantan Tour"
-            />
-            <div class="card-overlay">
-              <div class="duration-location">Taman Nasional Tanjung Puting</div>
-              <div class="price">
-                <span class="currency">Rp</span>
-                <span class="value">2.750.000</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="promo-card">
-            <img src="Images/jam gadang-sumbar.jpg" alt="sumatera barat tour" />
-            <div class="card-overlay">
-              <div class="duration-location">Jam Gadang</div>
-              <div class="price">
-                <span class="currency">Rp</span>
-                <span class="value">2.500.000</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="promo-card">
-            <img
-              src="Images/pantai losari-sulawesi selatan.jpg"
-              alt="sulawesi selatan Tour"
-            />
-            <div class="card-overlay">
-              <div class="duration-location">Pantai Losari</div>
-              <div class="price">
-                <span class="currency">Rp</span>
-                <span class="value">300.000</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="promo-card">
-            <img src="Images/taman nasional komodo-ntt.jpg" alt="NTT tour" />
-            <div class="card-overlay">
-              <div class="duration-location">Taman Nasional Komodo</div>
-              <div class="price">
-                <span class="currency">Rp</span>
-                <span class="value">2.900.000</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="promo-card">
-            <img src="Images/pantai pandawa-bali.jpg" alt="Bali Tour" />
-            <div class="card-overlay">
-              <div class="duration-location">Pantai Pandawa</div>
-              <div class="price">
-                <span class="currency">Rp</span>
-                <span class="value">1.780.000</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="promo-card">
-            <img
-              src="Images/labuan cermin-kalimantan.jpg"
-              alt="Kalimantan Tour"
-            />
-            <div class="card-overlay">
-              <div class="duration-location">Labuan Cermin</div>
-              <div class="price">
-                <span class="currency">Rp</span>
-                <span class="value">850.000</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="promo-card">
-            <img
-              src="Images/pantai air manis-sumbar.jpg"
-              alt="sumatera barat tour "
-            />
-            <div class="card-overlay">
-              <div class="duration-location">Pantai Air Manis</div>
-              <div class="price">
-                <span class="currency">Rp</span>
-                <span class="value">200.000</span>
-              </div>
+        <div class="promo-card">
+          <img src="Images/pantai air manis-sumbar.jpg" alt="sumatera barat tour " />
+          <div class="card-overlay">
+            <div class="duration-location">Pantai Air Manis</div>
+            <div class="price">
+              <span class="currency">Rp</span>
+              <span class="value">200.000</span>
             </div>
           </div>
         </div>
       </div>
+    </div>
 
-      <div class="carousel-navigation">
-        <button class="nav-button prev-button">&lt;</button>
-        <button class="nav-button next-button">&gt;</button>
-      </div>
-    </section>
+    <div class="carousel-navigation">
+      <button class="nav-button prev-button">&lt;</button>
+      <button class="nav-button next-button">&gt;</button>
+    </div>
+  </section>
 
-    <section>
-      <hr />
-      <div class="aboutus" id="aboutus">
-        <h2>Tentang Kami</h2>
-        <div class="container-about">
-          <div class="about">
-            <img src="Images/Paradise.png" alt="Paradise" />
-            <div class="text">
-              <h3>Paradise</h3>
-              <p class="deskripsi-about">
-                Selamat datang di website kami, teman perjalanan anda menuju
-                petualangan yang sangat menyenangkan. Kami adalah platform
-                traveling yang bersedia untuk membantu anda merencanakan,
-                menemukan, dan menikmati liburan santai hingga ekspedisi penuh
-                tantangan.
-              </p>
-            </div>
+  <section>
+    <hr />
+    <div class="aboutus" id="aboutus">
+      <h2>Tentang Kami</h2>
+      <div class="container-about">
+        <div class="about">
+          <img src="Images/Paradise.png" alt="Paradise" />
+          <div class="text">
+            <h3>Paradise</h3>
+            <p class="deskripsi-about">
+              Selamat datang di website kami, teman perjalanan anda menuju
+              petualangan yang sangat menyenangkan. Kami adalah platform
+              traveling yang bersedia untuk membantu anda merencanakan,
+              menemukan, dan menikmati liburan santai hingga ekspedisi penuh
+              tantangan.
+            </p>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <footer>
-      <div class="isifooter" id="kaki">
-        <h2>Kontak Kami</h2>
-        <p>Email: <a href="#">rayhanalamsyah866@gmail.com</a></p>
-        <p>Telepon: <a href="tel:+62123456789">+62 123 4567 89</a></p>
-        <p>Alamat: Jl.Thamrin No.140, Medan.</p>
-      </div>
-    </footer>
-    <script src="javascript/script.js"></script>
-  </body>
+  <footer>
+    <div class="isifooter" id="kaki">
+      <h2>Kontak Kami</h2>
+      <p>Email: <a href="#">rayhanalamsyah866@gmail.com</a></p>
+      <p>Telepon: <a href="tel:+62123456789">+62 123 4567 89</a></p>
+      <p>Alamat: Jl.Thamrin No.140, Medan.</p>
+    </div>
+  </footer>
+  <script src="javascript/script.js"></script>
+</body>
+
 </html>
