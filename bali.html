@@ -22,8 +22,12 @@
       </ul>
     </div>
   </nav>
-    <div class="container">
-      <div class="card">
+
+  <section class="destination-cards" id="bali">
+  <div class="container">
+
+    <a href="#pantai-pandawa">
+      <div class="card" data-aos="fade-up" data-aos-delay="100">
         <img src="Images/pantai pandawa-bali.jpg" alt="pantai pandawa" />
         <div class="card-content">
           <h3>Pantai Pandawa</h3>
@@ -32,11 +36,12 @@
             Bali, Pantai Pandawa
           </div>
           <div class="price">Rp 1.780.000</div>
-          <a class="details" href="#">DETAILS →</a>
         </div>
       </div>
+    </a>
 
-      <div class="card">
+    <a href="#pantai-kuta">
+      <div class="card" data-aos="fade-up" data-aos-delay="200">
         <img src="Images/pantai kutaa2-bali - Copy.jpg" alt="Pantai Kuta" />
         <div class="card-content">
           <h3>Pantai Kuta</h3>
@@ -45,11 +50,12 @@
             Bali, Pantai Kuta
           </div>
           <div class="price">Rp 1.600.000</div>
-          <a class="details" href="#">DETAILS →</a>
         </div>
       </div>
+    </a>
 
-      <div class="card">
+    <a href="#tanah-lot">
+      <div class="card" data-aos="fade-up" data-aos-delay="300">
         <img src="Images/tanah lot-balii.jpg" alt="Tanah Lot" />
         <div class="card-content">
           <h3>Tanah Lot</h3>
@@ -58,15 +64,13 @@
             Bali, Tanah Lot
           </div>
           <div class="price">Rp 980.000</div>
-          <a class="details" href="#">DETAILS →</a>
         </div>
       </div>
+    </a>
 
-      <div class="card">
-        <img
-          src="Images/air terjun sekumpul-bali.jpg"
-          alt="Air Terjun Sekumpul"
-        />
+    <a href="#sekumpul">
+      <div class="card" data-aos="fade-up" data-aos-delay="400">
+        <img src="Images/air terjun sekumpul-bali.jpg" alt="Air Terjun Sekumpul" />
         <div class="card-content">
           <h3>Air Terjun Sekumpul</h3>
           <div class="info">
@@ -74,10 +78,23 @@
             Bali, Air Terjun Sekumpul
           </div>
           <div class="price">Rp 780.000</div>
-          <a class="details" href="#">DETAILS →</a>
         </div>
       </div>
-    </div>
+    </a>
+
+  </div>
+</section>
+
   </body>
+  <!-- AOS Library -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 1000,
+    once: true
+  });
+</script>
+
     <script src="javascript/script.js"></script>
 </html>

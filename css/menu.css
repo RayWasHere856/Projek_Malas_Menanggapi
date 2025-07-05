@@ -12,6 +12,13 @@ a {
   color: inherit;
 }
 
+.container a {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+}
+
+
 /* NAVIGATION */
 nav {
   height: 60px;
@@ -81,8 +88,15 @@ nav {
   border-radius: 18px;
   overflow: hidden;
   box-shadow: 0 5px 12px rgba(0, 0, 0, 0.15);
-  transition: 0.3s;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
+/* Hover animation */
+.card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+}
+
 
 .card img {
   width: 100%;
