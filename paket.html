@@ -181,73 +181,102 @@
       <span class="logo-text"><a href="index.html" class="logo">Paradise</a></span>
       <div class="menu-toggle" id="menu-toggle">☰</div>
       <ul class="nav-links" id="nav-links">
-        <li><a href="#beranda">Beranda</a></li>
-        <li><a href="#jelajah">Jelajahi</a></li>
-        <li><a href="#aboutus">Tentang Kami</a></li>
-        <li><a href="#kaki">Hubungi Kami</a></li>
+        <li><a href="index.html#beranda">Beranda</a></li>
+        <li><a href="index.html#jelajah">Jelajahi</a></li>
+        <li><a href="index.html#aboutus">Tentang Kami</a></li>
+        <li><a href="index.html#kaki">Hubungi Kami</a></li>
       </ul>
     </div>
   </nav>
 
   <!-- FORM & HASIL PESANAN -->
-  <div class="container">
-    <form id="formPemesanan">
-      <h3>Pilih Jumlah Orang</h3>
-      <label><input type="radio" name="orang" value="1 Orang"> 1 Orang</label>
-      <label><input type="radio" name="orang" value="2 Orang"> 2 Orang</label>
-      <label><input type="radio" name="orang" value="3 Orang"> 3 Orang</label>
+<div class="container">
+  <form id="formPemesanan">
+    <h3>Pilih Jumlah Orang</h3>
+    <label><input type="radio" name="orang" value="1 Orang"> 1 Orang</label>
+    <label><input type="radio" name="orang" value="2 Orang"> 2 Orang</label>
+    <label><input type="radio" name="orang" value="3 Orang"> 3 Orang</label>
 
-      <h3>Pilih Paket</h3>
-      <select id="paketSelect" required>
-        <option value="">-- Pilih Paket --</option>
-        <option value="Paket A">Paket A</option>
-        <option value="Paket B">Paket B</option>
-        <option value="Paket C">Paket C</option>
-      </select>
+    <h3>Pilih Paket</h3>
+    <select id="paketSelect" required>
+      <option value="">-- Pilih Paket --</option>
+      <option value="Paket A">Paket A</option>
+      <option value="Paket B">Paket B</option>
+      <option value="Paket C">Paket C</option>
+    </select>
 
-      <button type="submit">Simpan Pesanan</button>
-      <a href="index.html" class="btn-kembali">Kembali</a>
-    </form>
+    <!-- Tambahan: Deskripsi Paket -->
+    <div id="deskripsiPaket" style="margin-top: 10px; color: #444; font-style: italic;"></div>
 
-    <div id="hasilPesanan"></div>
-  </div>
+    <!-- Tambahan: Tombol Konfirmasi -->
+    <button type="button" id="btnKonfirmasi" style="margin-top: 15px;">Konfirmasi</button>
+
+    <!-- Tombol Kembali -->
+    <a href="index.html" class="btn-kembali">Kembali</a>
+  </form>
+
+  <div id="hasilPesanan"></div>
+</div>
+
 
   <!-- SCRIPT UNTUK MENYIMPAN & MENAMPILKAN PESANAN -->
-  <script>
-    document.getElementById('formPemesanan').addEventListener('submit', function(e) {
-      e.preventDefault();
+<!-- Tambahan Script untuk deskripsi, total, dan konfirmasi -->
+<script>
+  const hargaOrang = {
+    "1 Orang": 50000,
+    "2 Orang": 100000,
+    "3 Orang": 150000
+  };
 
-      const orang = document.querySelector('input[name="orang"]:checked');
-      const paket = document.getElementById('paketSelect').value;
+  const hargaPaket = {
+    "Paket A": 100000,
+    "Paket B": 500000,
+    "Paket C": 1000000
+  };
 
-      if (!orang || !paket) {
-        alert("Silakan pilih jumlah orang dan paket.");
-        return;
-      }
+  const deskripsiPaket = {
+    "Paket A": "1 kamar dan jalan-jalan 1 hari",
+    "Paket B": "1 kamar dan jalan-jalan 3 hari",
+    "Paket C": "3 kamar dan jalan-jalan 5 hari"
+  };
 
-      const dataPesanan = {
-        orang: orang.value,
-        paket: paket
-      };
+  const paketSelect = document.getElementById('paketSelect');
+  const deskripsiDiv = document.getElementById('deskripsiPaket');
 
-      // Simpan ke localStorage
-      localStorage.setItem('pesanan', JSON.stringify(dataPesanan));
+  // Tampilkan deskripsi saat paket dipilih
+  paketSelect.addEventListener('change', function () {
+    const deskripsi = deskripsiPaket[this.value] || "";
+    deskripsiDiv.textContent = deskripsi;
+  });
 
-      // Tampilkan hasil dalam bentuk kartu
-      document.getElementById('hasilPesanan').innerHTML = `
-        <div class="card">
-          <h4>Pesanan Tersimpan</h4>
-          <p><strong>Jumlah Orang:</strong> ${orang.value}</p>
-          <p><strong>Paket Dipilih:</strong> ${paket}</p>
-        </div>
-      `;
-    });
+  // Konfirmasi Pesanan
+  document.getElementById('btnKonfirmasi').addEventListener('click', function () {
+    const orang = document.querySelector('input[name="orang"]:checked');
+    const paket = paketSelect.value;
 
-    // Navigasi responsive toggle
-    document.getElementById('menu-toggle').addEventListener('click', function () {
-      document.getElementById('nav-links').classList.toggle('active');
-    });
-  </script>
+    if (!orang || !paket) {
+      alert("Silakan pilih jumlah orang dan paket terlebih dahulu.");
+      return;
+    }
+
+    const biayaOrang = hargaOrang[orang.value];
+    const biayaPaket = hargaPaket[paket];
+    const total = biayaOrang + biayaPaket;
+
+    document.getElementById('hasilPesanan').innerHTML = `
+      <div class="card">
+        <h4>Summary Pesanan</h4>
+        <p><strong>Jumlah Orang:</strong> ${orang.value} (Rp ${biayaOrang.toLocaleString()})</p>
+        <p><strong>Paket Dipilih:</strong> ${paket}</p>
+        <p><strong>Deskripsi Paket:</strong> ${deskripsiPaket[paket]}</p>
+        <p><strong>Biaya Paket:</strong> Rp ${biayaPaket.toLocaleString()}</p>
+        <hr>
+        <p><strong>Total Biaya:</strong> <span style="color:green;">Rp ${total.toLocaleString()}</span></p>
+      </div>
+    `;
+  });
+</script>
+
 
 </body>
 </html>

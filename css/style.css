@@ -45,12 +45,63 @@ nav {
   cursor: pointer;
 }
 
+.section-destinasi {
+  padding: 50px 20px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.section-destinasi h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.section-destinasi p {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+/* WRAPPER RESPONSIF */
+.table-responsive {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* TABEL */
+.section-destinasi table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 500px; /* agar tetap lebar dan scroll di mobile */
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+  margin: 0 auto;
+}
+
+.section-destinasi th,
+.section-destinasi td {
+  padding: 12px 15px;
+  border: 1px solid #ccc;
+  text-align: center;
+}
+
+.section-destinasi th {
+  background-color: #4682B4;
+  color: white;
+}
+
+.section-destinasi tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
 .nav-links {
   display: flex;
   list-style: none;
   gap: 20px;
 }
-
+table{
+  border: 1px solid black;
+}
 .nav-links li a {
   font-size: 14px;
   font-weight: 500;
