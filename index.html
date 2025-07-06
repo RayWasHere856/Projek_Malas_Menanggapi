@@ -1,211 +1,196 @@
 <!DOCTYPE html>
+<!-- Deklarasi tipe dokumen HTML5 -->
+
 <html lang="en">
+  <!-- Bahasa dokumen diatur ke English -->
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Website Pariwisata</title>
-  <link rel="stylesheet" href="css/style.css" />
-  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+  <head>
+    <!-- Metadata dan resource eksternal -->
+    <meta charset="UTF-8" />
+    <!-- Set karakter encoding ke UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Responsif di semua device -->
+    <title>Website Pariwisata</title>
+    <!-- Judul tab browser -->
 
-</head>
+    <!-- Import file CSS utama -->
+    <link rel="stylesheet" href="css/style.css" />
 
-<body>
-  <nav>
-    <div class="nav-container">
-      <span class="logo-text"><a href="index.html" class="logo">Paradise</a></span>
-      <div class="menu-toggle" id="menu-toggle">☰</div>
-      <ul class="nav-links" id="nav-links">
-        <li><a href="#beranda">Beranda</a></li>
-        <li><a href="#jelajah">Jelajahi</a></li>
-        <li><a href="#aboutus">Tentang Kami</a></li>
-        <li><a href="#kaki">Hubungi Kami</a></li>
-      </ul>
-    </div>
-  </nav>
+    <!-- Import library animasi AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+  </head>
 
-<section class="landing-page" id="beranda" data-aos="fade-up">
-  <h1 data-aos="fade-right">Temukan Semua Keindahan Di Setiap Sudut Indonesia</h1>
-  <p data-aos="fade-left">
-    Jelajahi destinasi pariwisata yang cantik, indah, dan rasakan
-    petualangan yang tak terlupakan. Ayo mulai perjalananmu!
-  </p>
-  <a href="#jelajah" data-aos="zoom-in">Jelajahi Sekarang!</a>
-</section>
+  <body>
+    <!-- === NAVIGASI UTAMA === -->
+    <nav>
+      <div class="nav-container">
+        <!-- Logo website -->
+        <span class="logo-text"
+          ><a href="index.html" class="logo">Paradise</a></span
+        >
+        <!-- Tombol hamburger menu di mobile -->
+        <div class="menu-toggle" id="menu-toggle">☰</div>
+        <!-- Daftar menu navigasi -->
+        <ul class="nav-links" id="nav-links">
+          <li><a href="#beranda">Beranda</a></li>
+          <li><a href="#jelajah">Jelajahi</a></li>
+          <li><a href="#aboutus">Tentang Kami</a></li>
+          <li><a href="#kaki">Hubungi Kami</a></li>
+        </ul>
+      </div>
+    </nav>
 
+    <!-- === LANDING PAGE SECTION === -->
+    <section class="landing-page" id="beranda" data-aos="fade-up">
+      <h1 data-aos="fade-right">
+        Temukan Semua Keindahan Di Setiap Sudut Indonesia
+      </h1>
+      <p data-aos="fade-left">
+        Jelajahi destinasi pariwisata yang cantik, indah, dan rasakan
+        petualangan yang tak terlupakan.
+      </p>
+      <!-- Tombol CTA -->
+      <a href="#jelajah" data-aos="zoom-in">Jelajahi Sekarang!</a>
+    </section>
 
-<section class="container" id="jelajah" data-aos="fade-up">
-  <h2 data-aos="fade-down">Jelajahi Dunia</h2>
-  <p class="jelajah-deskripsi" data-aos="fade-up" data-aos-delay="100">
-    Temukan destinasi terbaik dari berbagai penjuru Indonesia, mulai dari
-    budaya, alam, hingga keindahan bawah lautnya.
-  </p>
+    <!-- === SECTION JELAJAH DESTINASI === -->
+    <section class="container" id="jelajah" data-aos="fade-up">
+      <h2 data-aos="fade-down">Jelajahi Dunia</h2>
+      <p class="jelajah-deskripsi" data-aos="fade-up" data-aos-delay="100">
+        Temukan destinasi terbaik dari berbagai penjuru Indonesia.
+      </p>
 
-  <div class="tour-grid">
-    <div class="tour-card" style="background-image: url('Images/Bali.jpg')" data-aos="zoom-in" data-aos-delay="100">
-      <a href="bali.html">
-        <div class="overlay-content">
-          <h3>Bali</h3>
-          <p>4 Tours Menu</p>
+      <!-- Grid destinasi -->
+      <div class="tour-grid">
+        <!-- Kartu destinasi 1 -->
+        <div
+          class="tour-card"
+          style="background-image: url('Images/Bali.jpg')"
+          data-aos="zoom-in"
+          data-aos-delay="100"
+        >
+          <a href="bali.html">
+            <div class="overlay-content">
+              <h3>Bali</h3>
+              <p>4 Tours Menu</p>
+            </div>
+          </a>
         </div>
-      </a>
-    </div>
 
-    <div class="tour-card" style="background-image: url('Images/Papua.jpg')" data-aos="zoom-in" data-aos-delay="200">
-      <a href="papua.html">
-        <div class="overlay-content">
-          <h3>Papua</h3>
-          <p>4 Tours Menu</p>
+        <!-- Kartu destinasi 2 -->
+        <div
+          class="tour-card"
+          style="background-image: url('Images/Papua.jpg')"
+          data-aos="zoom-in"
+          data-aos-delay="200"
+        >
+          <a href="papua.html">
+            <div class="overlay-content">
+              <h3>Papua</h3>
+              <p>4 Tours Menu</p>
+            </div>
+          </a>
         </div>
-      </a>
-    </div>
 
-    <div class="tour-card" style="background-image: url('Images/Kalimantan.jpg')" data-aos="zoom-in" data-aos-delay="300">
-      <a href="kalimantan.html">
-        <div class="overlay-content">
-          <h3>Kalimantan</h3>
-          <p>4 Tours Menu</p>
+        <!-- Kartu destinasi 3 -->
+        <div
+          class="tour-card"
+          style="background-image: url('Images/Kalimantan.jpg')"
+          data-aos="zoom-in"
+          data-aos-delay="300"
+        >
+          <a href="kalimantan.html">
+            <div class="overlay-content">
+              <h3>Kalimantan</h3>
+              <p>4 Tours Menu</p>
+            </div>
+          </a>
         </div>
-      </a>
-    </div>
+      </div>
+    </section>
 
-  </div>
-</section>
+    <!-- === SECTION PROMO / PENAWARAN === -->
+    <section class="container" id="promotions" data-aos="fade-up">
+      <div class="promotions-header">
+        <h2 data-aos="fade-down">Penawaran Spesial</h2>
+        <p
+          class="promotions-description"
+          data-aos="fade-up"
+          data-aos-delay="100"
+        >
+          Promo eksklusif dan diskon destinasi wisata.
+        </p>
+      </div>
 
-
-<section class="container" id="promotions" data-aos="fade-up">
-  <div class="promotions-header">
-    <h2 data-aos="fade-down">Penawaran Spesial</h2>
-    <p class="promotions-description" data-aos="fade-up" data-aos-delay="100">
-      Jangan lewatkan penawaran eksklusif dan promosi menarik dari kami!
-      Segera manfaatkan kesempatan emas ini untuk mewujudkan liburan impian
-      Anda dengan keuntungan berlimpah yang menanti!
-    </p>
-  </div>
-
-  <div class="carousel-container" data-aos="zoom-in" data-aos-delay="200">
-    <div class="carousel-track">
-      <div class="promo-card" data-aos="fade-right" data-aos-delay="300">
-        <img src="Images/pantai kuta-bali.jpg" alt="Bali Tour" />
-        <div class="card-overlay">
-          <div class="duration-location">Pantai Kuta</div>
-          <div class="price"><span class="currency">Rp</span><span class="value">1.600.000</span></div>
+      <!-- Carousel promo -->
+      <div class="carousel-container" data-aos="zoom-in" data-aos-delay="200">
+        <div class="carousel-track">
+          <!-- Kartu promo 1 -->
+          <div class="promo-card" data-aos="fade-right" data-aos-delay="300">
+            <img src="Images/pantai kuta-bali.jpg" alt="Bali Tour" />
+            <div class="card-overlay">
+              <div class="duration-location">Pantai Kuta</div>
+              <div class="price">
+                <span class="currency">Rp</span
+                ><span class="value">1.600.000</span>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
 
-      <div class="promo-card" data-aos="fade-right" data-aos-delay="400">
-        <img src="Images/raja ampat-papua.jpg" alt="Papua Tour" />
-        <div class="card-overlay">
-          <div class="duration-location">Raja Ampat</div>
-          <div class="price"><span class="currency">Rp</span><span class="value">3.500.000</span></div>
+      <!-- Tombol navigasi carousel -->
+      <div class="carousel-navigation" data-aos="fade-up" data-aos-delay="300">
+        <button class="nav-button prev-button">&lt;</button>
+        <button class="nav-button next-button">&gt;</button>
+      </div>
+    </section>
+
+    <!-- === SECTION TENTANG KAMI === -->
+    <section data-aos="fade-up">
+      <hr />
+      <div class="aboutus" id="aboutus">
+        <h2 data-aos="fade-down">Tentang Kami</h2>
+        <div class="container-about">
+          <div class="about">
+            <!-- Gambar logo -->
+            <img
+              src="Images/Paradise.png"
+              alt="Paradise"
+              data-aos="fade-right"
+              data-aos-delay="200"
+            />
+            <div class="text" data-aos="fade-left" data-aos-delay="400">
+              <h3>Paradise</h3>
+              <p class="deskripsi-about">
+                Platform traveling untuk merencanakan dan menikmati liburan.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
+    </section>
 
-      <div class="promo-card" data-aos="fade-right" data-aos-delay="500">
-        <img src="Images/taman nasional tanjung puting-kalimantan.jpg" alt="Kalimantan Tour" />
-        <div class="card-overlay">
-          <div class="duration-location">Taman Nasional Tanjung Puting</div>
-          <div class="price"><span class="currency">Rp</span><span class="value">2.750.000</span></div>
-        </div>
+    <!-- === FOOTER === -->
+    <footer data-aos="fade-up" data-aos-duration="1000">
+      <div class="isifooter" id="kaki">
+        <h2>Kontak Kami</h2>
+        <p>Email: <a href="#">rayhanalamsyah866@gmail.com</a></p>
+        <p>Telepon: <a href="tel:+62123456789">+62 123 4567 89</a></p>
+        <p>Alamat: Jl.Thamrin No.140, Medan.</p>
       </div>
+    </footer>
 
-      <div class="promo-card" data-aos="fade-right" data-aos-delay="600">
-        <img src="Images/jam gadang-sumbar.jpg" alt="sumatera barat tour" />
-        <div class="card-overlay">
-          <div class="duration-location">Jam Gadang</div>
-          <div class="price"><span class="currency">Rp</span><span class="value">2.500.000</span></div>
-        </div>
-      </div>
+    <!-- === FILE JAVASCRIPT UTAMA === -->
+    <script src="javascript/script.js"></script>
 
-      <div class="promo-card" data-aos="fade-right" data-aos-delay="700">
-        <img src="Images/pantai losari-sulawesi selatan.jpg" alt="sulawesi selatan Tour" />
-        <div class="card-overlay">
-          <div class="duration-location">Pantai Losari</div>
-          <div class="price"><span class="currency">Rp</span><span class="value">300.000</span></div>
-        </div>
-      </div>
-
-      <div class="promo-card" data-aos="fade-right" data-aos-delay="800">
-        <img src="Images/taman nasional komodo-ntt.jpg" alt="NTT tour" />
-        <div class="card-overlay">
-          <div class="duration-location">Taman Nasional Komodo</div>
-          <div class="price"><span class="currency">Rp</span><span class="value">2.900.000</span></div>
-        </div>
-      </div>
-
-      <div class="promo-card" data-aos="fade-right" data-aos-delay="900">
-        <img src="Images/pantai pandawa-bali.jpg" alt="Bali Tour" />
-        <div class="card-overlay">
-          <div class="duration-location">Pantai Pandawa</div>
-          <div class="price"><span class="currency">Rp</span><span class="value">1.780.000</span></div>
-        </div>
-      </div>
-
-      <div class="promo-card" data-aos="fade-right" data-aos-delay="1000">
-        <img src="Images/labuan cermin-kalimantan.jpg" alt="Kalimantan Tour" />
-        <div class="card-overlay">
-          <div class="duration-location">Labuan Cermin</div>
-          <div class="price"><span class="currency">Rp</span><span class="value">850.000</span></div>
-        </div>
-      </div>
-
-      <div class="promo-card" data-aos="fade-right" data-aos-delay="1100">
-        <img src="Images/pantai air manis-sumbar.jpg" alt="sumatera barat tour " />
-        <div class="card-overlay">
-          <div class="duration-location">Pantai Air Manis</div>
-          <div class="price"><span class="currency">Rp</span><span class="value">200.000</span></div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="carousel-navigation" data-aos="fade-up" data-aos-delay="300">
-    <button class="nav-button prev-button">&lt;</button>
-    <button class="nav-button next-button">&gt;</button>
-  </div>
-</section>
-
-
-<section data-aos="fade-up">
-  <hr />
-  <div class="aboutus" id="aboutus">
-    <h2 data-aos="fade-down">Tentang Kami</h2>
-    <div class="container-about">
-      <div class="about">
-        <img src="Images/Paradise.png" alt="Paradise" data-aos="fade-right" data-aos-delay="200" />
-        <div class="text" data-aos="fade-left" data-aos-delay="400">
-          <h3>Paradise</h3>
-          <p class="deskripsi-about">
-            Selamat datang di website kami, teman perjalanan anda menuju
-            petualangan yang sangat menyenangkan. Kami adalah platform
-            traveling yang bersedia untuk membantu anda merencanakan,
-            menemukan, dan menikmati liburan santai hingga ekspedisi penuh
-            tantangan.
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-<footer data-aos="fade-up" data-aos-duration="1000">
-  <div class="isifooter" id="kaki">
-    <h2>Kontak Kami</h2>
-    <p>Email: <a href="#">rayhanalamsyah866@gmail.com</a></p>
-    <p>Telepon: <a href="tel:+62123456789">+62 123 4567 89</a></p>
-    <p>Alamat: Jl.Thamrin No.140, Medan.</p>
-  </div>
-</footer>
-
-  <script src="javascript/script.js"></script>
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script>
-  AOS.init({
-    duration: 800,
-    once: true,
-  });
-</script>
-</body>
-
+    <!-- === LIBRARY ANIMASI AOS === -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 800 /* Durasi animasi 800ms */,
+        once: true /* Animasi hanya berjalan sekali */,
+      });
+    </script>
+  </body>
 </html>

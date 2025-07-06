@@ -3,15 +3,33 @@
   <head>
     <meta charset="UTF-8" />
     <title>Paket Tour Papua</title>
+
+    <!-- Link ke file CSS eksternal -->
     <link rel="stylesheet" href="css/menu.css" />
-    <script src="https://kit.fontawesome.com/e415abe503.js" crossorigin="anonymous"></script>
+
+    <!-- Import ikon font-awesome -->
+    <script
+      src="https://kit.fontawesome.com/e415abe503.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Link ke library animasi AOS (Animate on Scroll) -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
+
   <body>
+    <!-- Navbar utama -->
     <nav>
       <div class="nav-container">
-        <span class="logo-text"><a href="index.html" class="logo">Paradise</a></span>
+        <!-- Logo navigasi -->
+        <span class="logo-text"
+          ><a href="index.html" class="logo">Paradise</a></span
+        >
+
+        <!-- Tombol menu toggle untuk mobile -->
         <div class="menu-toggle" id="menu-toggle">☰</div>
+
+        <!-- Daftar link navigasi -->
         <ul class="nav-links" id="nav-links">
           <li><a href="index.html">Beranda</a></li>
           <li><a href="index.html#jelajah">Jelajahi</a></li>
@@ -21,10 +39,15 @@
       </div>
     </nav>
 
+    <!-- Container semua kartu destinasi -->
     <div class="container">
+      <!-- Kartu destinasi Raja Ampat -->
       <a href="destination/Papua/raja.html">
         <div class="card" data-aos="fade-up" data-aos-delay="100">
+          <!-- Gambar destinasi -->
           <img src="Images/raja ampat2-papua.jpg" alt="Raja Ampat" />
+
+          <!-- Isi konten kartu -->
           <div class="card-content">
             <h3>Raja Ampat</h3>
             <div class="info">
@@ -37,6 +60,7 @@
         </div>
       </a>
 
+      <!-- Kartu destinasi Danau Sentani -->
       <a href="destination/Papua/setani.html">
         <div class="card" data-aos="fade-up" data-aos-delay="200">
           <img src="Images/danau sentani-papua.jpg" alt="Danau Sentani" />
@@ -52,9 +76,13 @@
         </div>
       </a>
 
+      <!-- Kartu destinasi Air Terjun Bihewa -->
       <a href="destination/Papua/bihewa.html">
         <div class="card" data-aos="fade-up" data-aos-delay="300">
-          <img src="Images/air terjun bihewa-bali.jpg" alt="Air Terjun Bihewa" />
+          <img
+            src="Images/air terjun bihewa-bali.jpg"
+            alt="Air Terjun Bihewa"
+          />
           <div class="card-content">
             <h3>Air Terjun Bihewa</h3>
             <div class="info">
@@ -67,6 +95,7 @@
         </div>
       </a>
 
+      <!-- Kartu destinasi Telaga Biru -->
       <a href="destination/Papua/telaga.html">
         <div class="card" data-aos="fade-up" data-aos-delay="400">
           <img src="Images/telaga biru-papua.jpg" alt="Telaga Biru" />
@@ -83,10 +112,14 @@
       </a>
     </div>
 
+    <!-- Import library AOS untuk animasi -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
+      /* Inisialisasi animasi AOS saat halaman dimuat */
       AOS.init();
     </script>
+
+    <!-- Import file JavaScript eksternal -->
     <script src="javascript/script.js"></script>
   </body>
 </html>
