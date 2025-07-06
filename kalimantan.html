@@ -3,15 +3,33 @@
   <head>
     <meta charset="UTF-8" />
     <title>Paket Tour Kalimantan</title>
+
+    <!-- Link ke file CSS eksternal -->
     <link rel="stylesheet" href="css/menu.css" />
-    <script src="https://kit.fontawesome.com/e415abe503.js" crossorigin="anonymous"></script>
+
+    <!-- Import ikon Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/e415abe503.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Link ke library animasi AOS (Animate On Scroll) -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
+
   <body>
+    <!-- Navigasi utama -->
     <nav>
       <div class="nav-container">
-        <span class="logo-text"><a href="index.html" class="logo">Paradise</a></span>
+        <!-- Logo situs -->
+        <span class="logo-text">
+          <a href="index.html" class="logo">Paradise</a>
+        </span>
+
+        <!-- Tombol menu toggle (untuk tampilan mobile) -->
         <div class="menu-toggle" id="menu-toggle">☰</div>
+
+        <!-- Daftar menu navigasi -->
         <ul class="nav-links" id="nav-links">
           <li><a href="index.html">Beranda</a></li>
           <li><a href="index.html#jelajah">Jelajahi</a></li>
@@ -21,13 +39,17 @@
       </div>
     </nav>
 
+    <!-- Container semua kartu destinasi -->
     <div class="container">
+      <!-- Kartu destinasi: Labuan Cermin -->
       <a href="destination/Kalimantan/labuan.html">
         <div class="card" data-aos="fade-up" data-aos-delay="100">
+          <!-- Gambar destinasi -->
           <img src="Images/labuan cermin-kalimantan.jpg" alt="Labuan Cermin" />
           <div class="card-content">
             <h3>Labuan Cermin</h3>
             <div class="info">
+              <!-- Ikon lokasi -->
               <i class="fa-solid fa-location-dot" style="color: #ff0000"></i>
               Kalimantan, Labuan Cermin
             </div>
@@ -37,9 +59,13 @@
         </div>
       </a>
 
+      <!-- Kartu destinasi: Taman Nasional Tanjung Puting -->
       <a href="destination/Kalimantan/taman.html">
         <div class="card" data-aos="fade-up" data-aos-delay="200">
-          <img src="Images/taman nasional tanjung puting-kalimantan.jpg" alt="Taman Nasional Tanjung Puting" />
+          <img
+            src="Images/taman nasional tanjung puting-kalimantan.jpg"
+            alt="Taman Nasional Tanjung Puting"
+          />
           <div class="card-content">
             <h3>Taman Nasional Tanjung Puting</h3>
             <div class="info">
@@ -52,6 +78,7 @@
         </div>
       </a>
 
+      <!-- Kartu destinasi: Pantai Melawi -->
       <a href="destination/Kalimantan/pantai.html">
         <div class="card" data-aos="fade-up" data-aos-delay="300">
           <img src="Images/pantai melawi-kalimantan.jpg" alt="Pantai Melawi" />
@@ -67,9 +94,13 @@
         </div>
       </a>
 
+      <!-- Kartu destinasi: Kepulauan Derawan -->
       <a href="destination/Kalimantan/tanjung.html">
         <div class="card" data-aos="fade-up" data-aos-delay="400">
-          <img src="Images/kepulauan derawan-kalimantan.jpg" alt="Kepulauan Derawan" />
+          <img
+            src="Images/kepulauan derawan-kalimantan.jpg"
+            alt="Kepulauan Derawan"
+          />
           <div class="card-content">
             <h3>Kepulauan Derawan</h3>
             <div class="info">
@@ -83,10 +114,14 @@
       </a>
     </div>
 
+    <!-- Import library AOS JavaScript -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
+      /* Inisialisasi animasi AOS saat halaman dimuat */
       AOS.init();
     </script>
+
+    <!-- Import file JavaScript eksternal -->
     <script src="javascript/script.js"></script>
   </body>
 </html>

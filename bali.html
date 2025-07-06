@@ -3,98 +3,121 @@
   <head>
     <meta charset="UTF-8" />
     <title>Paket Tour Bali</title>
+
+    <!-- Link ke file CSS eksternal -->
     <link rel="stylesheet" href="css/menu.css" />
+
+    <!-- Import ikon font-awesome -->
     <script
       src="https://kit.fontawesome.com/e415abe503.js"
       crossorigin="anonymous"
     ></script>
   </head>
+
   <body>
-      <nav>
-    <div class="nav-container">
-      <span class="logo-text"><a href="index.html" class="logo">Paradise</a></span>
-      <div class="menu-toggle" id="menu-toggle">☰</div>
-      <ul class="nav-links" id="nav-links">
-        <li><a href="index.html">Beranda</a></li>
-        <li><a href="index.html#jelajah">Jelajahi</a></li>
-        <li><a href="index.html#aboutus">Tentang Kami</a></li>
-        <li><a href="index.html#kaki">Hubungi Kami</a></li>
-      </ul>
-    </div>
-  </nav>
+    <!-- Navbar utama -->
+    <nav>
+      <div class="nav-container">
+        <!-- Logo navigasi -->
+        <span class="logo-text">
+          <a href="index.html" class="logo">Paradise</a>
+        </span>
 
-  <section class="destination-cards" id="bali">
-  <div class="container">
+        <!-- Tombol menu toggle (tampil di mobile) -->
+        <div class="menu-toggle" id="menu-toggle">☰</div>
 
-    <a href="destination/Bali/pandawa.html">
-      <div class="card" data-aos="fade-up" data-aos-delay="100">
-        <img src="Images/pantai pandawa-bali.jpg" alt="pantai pandawa" />
-        <div class="card-content">
-          <h3>Pantai Pandawa</h3>
-          <div class="info">
-            <i class="fa-solid fa-location-dot" style="color: #ff0000"></i>
-            Bali, Pantai Pandawa
-          </div>
-          <div class="price">Rp 1.780.000</div>
-        </div>
+        <!-- Daftar menu navigasi -->
+        <ul class="nav-links" id="nav-links">
+          <li><a href="index.html">Beranda</a></li>
+          <li><a href="index.html#jelajah">Jelajahi</a></li>
+          <li><a href="index.html#aboutus">Tentang Kami</a></li>
+          <li><a href="index.html#kaki">Hubungi Kami</a></li>
+        </ul>
       </div>
-    </a>
+    </nav>
 
-    <a href="destination/Bali/kuta.html">
-      <div class="card" data-aos="fade-up" data-aos-delay="200">
-        <img src="Images/pantai kutaa2-bali - Copy.jpg" alt="Pantai Kuta" />
-        <div class="card-content">
-          <h3>Pantai Kuta</h3>
-          <div class="info">
-            <i class="fa-solid fa-location-dot" style="color: #ff0000"></i>
-            Bali, Pantai Kuta
+    <!-- Section berisi kumpulan kartu destinasi Bali -->
+    <section class="destination-cards" id="bali">
+      <div class="container">
+        <!-- Kartu destinasi Pantai Pandawa -->
+        <a href="destination/Bali/pandawa.html">
+          <div class="card" data-aos="fade-up" data-aos-delay="100">
+            <img src="Images/pantai pandawa-bali.jpg" alt="pantai pandawa" />
+            <div class="card-content">
+              <h3>Pantai Pandawa</h3>
+              <div class="info">
+                <i class="fa-solid fa-location-dot" style="color: #ff0000"></i>
+                Bali, Pantai Pandawa
+              </div>
+              <div class="price">Rp 1.780.000</div>
+            </div>
           </div>
-          <div class="price">Rp 1.600.000</div>
-        </div>
-      </div>
-    </a>
+        </a>
 
-    <a href="destination/Bali/lot.html">
-      <div class="card" data-aos="fade-up" data-aos-delay="300">
-        <img src="Images/tanah lot-balii.jpg" alt="Tanah Lot" />
-        <div class="card-content">
-          <h3>Tanah Lot</h3>
-          <div class="info">
-            <i class="fa-solid fa-location-dot" style="color: #ff0000"></i>
-            Bali, Tanah Lot
+        <!-- Kartu destinasi Pantai Kuta -->
+        <a href="destination/Bali/kuta.html">
+          <div class="card" data-aos="fade-up" data-aos-delay="200">
+            <img src="Images/pantai kutaa2-bali - Copy.jpg" alt="Pantai Kuta" />
+            <div class="card-content">
+              <h3>Pantai Kuta</h3>
+              <div class="info">
+                <i class="fa-solid fa-location-dot" style="color: #ff0000"></i>
+                Bali, Pantai Kuta
+              </div>
+              <div class="price">Rp 1.600.000</div>
+            </div>
           </div>
-          <div class="price">Rp 980.000</div>
-        </div>
-      </div>
-    </a>
+        </a>
 
-    <a href="destination/Bali/sekumpul.html">
-      <div class="card" data-aos="fade-up" data-aos-delay="400">
-        <img src="Images/air terjun sekumpul-bali.jpg" alt="Air Terjun Sekumpul" />
-        <div class="card-content">
-          <h3>Air Terjun Sekumpul</h3>
-          <div class="info">
-            <i class="fa-solid fa-location-dot" style="color: #ff0000"></i>
-            Bali, Air Terjun Sekumpul
+        <!-- Kartu destinasi Tanah Lot -->
+        <a href="destination/Bali/lot.html">
+          <div class="card" data-aos="fade-up" data-aos-delay="300">
+            <img src="Images/tanah lot-balii.jpg" alt="Tanah Lot" />
+            <div class="card-content">
+              <h3>Tanah Lot</h3>
+              <div class="info">
+                <i class="fa-solid fa-location-dot" style="color: #ff0000"></i>
+                Bali, Tanah Lot
+              </div>
+              <div class="price">Rp 980.000</div>
+            </div>
           </div>
-          <div class="price">Rp 780.000</div>
-        </div>
+        </a>
+
+        <!-- Kartu destinasi Air Terjun Sekumpul -->
+        <a href="destination/Bali/sekumpul.html">
+          <div class="card" data-aos="fade-up" data-aos-delay="400">
+            <img
+              src="Images/air terjun sekumpul-bali.jpg"
+              alt="Air Terjun Sekumpul"
+            />
+            <div class="card-content">
+              <h3>Air Terjun Sekumpul</h3>
+              <div class="info">
+                <i class="fa-solid fa-location-dot" style="color: #ff0000"></i>
+                Bali, Air Terjun Sekumpul
+              </div>
+              <div class="price">Rp 780.000</div>
+            </div>
+          </div>
+        </a>
       </div>
-    </a>
-
-  </div>
-</section>
-
+    </section>
   </body>
-  <!-- AOS Library -->
-<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script>
-  AOS.init({
-    duration: 1000,
-    once: true
-  });
-</script>
 
-    <script src="javascript/script.js"></script>
+  <!-- Import library CSS AOS untuk animasi scroll -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+  <!-- Import library JavaScript AOS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    /* Inisialisasi library AOS saat halaman dimuat */
+    AOS.init({
+      duration: 1000 /* durasi animasi 1000ms */,
+      once: true /* animasi terjadi sekali saat pertama muncul */,
+    });
+  </script>
+
+  <!-- Import file JavaScript eksternal -->
+  <script src="javascript/script.js"></script>
 </html>
