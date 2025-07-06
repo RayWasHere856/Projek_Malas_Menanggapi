@@ -286,24 +286,6 @@ nav {
   margin-top: 30px;
 }
 
-.nav-button {
-  background-color: #fff;
-  border: 1px solid #ccc;
-  border-radius: 50%;
-  width: 40px;
-  height: 40px;
-  font-size: 1.5rem;
-  cursor: pointer;
-  margin: 0 10px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-  transition: 0.3s ease;
-}
-
-.nav-button:hover {
-  background-color: #eee;
-  border-color: #aaa;
-  transform: scale(1.05);
-}
 
 /* ABOUT US */
 .container-about {

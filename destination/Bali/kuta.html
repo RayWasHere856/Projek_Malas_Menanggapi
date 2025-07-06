@@ -1,52 +1,74 @@
-<section class="tour-info">
-  <div class="tour-meta">
-    <div class="meta-item">
-      <i class="fa fa-calendar"></i>
-      <p><strong>DURATION</strong><br>10D/07N</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Paradise Tour</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="../../css/kota.css">
+</head>
+<body>
+  <nav>
+    <div class="nav-container">
+      <span class="logo-text"><a href="../../index.html" class="logo">Paradise</a></span>
+      <div class="menu-toggle" id="menu-toggle">☰</div>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="../../index.html">Beranda</a></li>
+        <li><a href="../../index.html#jelajah">Jelajahi</a></li>
+        <li><a href="../../index.html#aboutus">Tentang Kami</a></li>
+        <li><a href="../../index.html#kaki">Hubungi Kami</a></li>
+      </ul>
     </div>
-    <div class="meta-item">
-      <i class="fa fa-users"></i>
-      <p><strong>GROUP SIZE</strong><br>16 People</p>
-    </div>
-    <div class="meta-item">
-      <i class="fa fa-star"></i>
-      <p><strong>PREMIERE CLASS</strong><br>Available</p>
-    </div>
-    <div class="meta-item">
-      <i class="fa fa-cloud"></i>
-      <p><strong>SEASONS</strong><br>Autumn Holiday | Low Season Departure</p>
-    </div>
+  </nav>
+
+  <div class="top-banner">
+    <img src="../../Images/pantai kutaa2.jpg" alt="Banner" />
   </div>
 
-  <div class="tour-destinations">
-    <p><strong>Czech Republic - Slovakia - Germany - Hungary - Austria</strong></p>
-    <p>Prague - Kutna Hora - Bratislava - Munich - Nuremberg - Budapest - Vienna - Hallstatt - Salzburg</p>
-  </div>
+  <section>
+    <div class="top-info">
+      <div class="info-group"><i class="fas fa-clock"></i> 10D/07N</div>
+      <div class="info-group"><i class="fas fa-users"></i> 20 People</div>
+      <div class="info-group"><i class="fas fa-star"></i> Premiere Class: Available</div>
+      <div class="info-group"><i class="fas fa-calendar-alt"></i> Autumn Holiday | Low Season Departure</div>
+      <div class="info-group"><i class="fas fa-globe"></i> Czech Republic - Slovakia - Germany - Hungary - Austria</div>
+      <div class="info-group"><i class="fas fa-map-marker-alt"></i> Prague - Budapest - Vienna - Salzburg</div>
+      <div class="price-box">
+        <del>IDR 40,888,000</del>
+        <strong>IDR 35,888,000</strong><br />
+        <a href="#" class="btn-book">BOOK THIS TOUR</a>
+      </div>
+    </div>
 
-  <div class="tour-booking">
-    <p>Start from</p>
-    <p class="price-before">IDR <del>38,888,000</del></p>
-    <p class="price-now">IDR 33,888,000</p>
-    <button class="book-btn">BOOK THIS TOUR</button>
-  </div>
-</section>
+    <div class="section">
+      <h2>Experience Highlights</h2>
+      <p><span class="bold">Nuremberg</span> - Menyatu antara kemegahan bersejarah & pesona modern.</p>
+      <p><span class="bold">Hallstatt</span> - Danau menakjubkan seperti pantulan kaca.</p>
+      <p><span class="bold">Fisherman's Bastion</span> - Arsitektur klasik & legenda Budapest.</p>
+    </div>
 
-<section class="tour-highlights">
-  <h3>Experience Highlights</h3>
-  <ul>
-    <li><strong>Schonbrunn Palace</strong> – Terjun ke dalam kemewahan Kerajaan Habsburg...</li>
-    <li><strong>Old Town Prague</strong> – Selami kemegahan sejarah dan arsitektur Republik Ceko...</li>
-    <li><strong>Hallstatt</strong> – Terpesona oleh keindahan danau yang memukau seperti cermin...</li>
-  </ul>
-</section>
+    <div class="section">
+      <h2>Why Book With Us?</h2>
+      <p>Mengunjungi <span class="bold">FISHERMAN BASTION</span></p>
+      <p>Mengunjungi <span class="bold">OLD TOWN PRAGUE</span></p>
+    </div>
+  </section>
 
-<section class="tour-benefits">
-  <h3>Why Book With Us?</h3>
-  <ul>
-    <li>Mengunjungi <strong>FISHERMAN BASTION</strong>,</li>
-    <li>Mengunjungi <strong>OLD TOWN PRAGUE</strong></li>
-    <li>Mengunjungi <strong>BMW WORLD</strong>,</li>
-    <li>Berbelanja di <strong>INGOLSTADT VILLAGE OUTLET</strong> tanpa biaya tambahan</li>
-    <li><strong>FREE EXCLUSIVE CABIN LUGGAGE SAMSONITE WORTH VALUE IDR 4,500,000*</strong></li>
-  </ul>
-</section>
+  <footer>
+    <h3>&copy; Kelompok Malas Menanggapi</h3>
+  </footer>
+
+  <script>
+    document.getElementById('menu-toggle').addEventListener('click', function () {
+      document.getElementById('nav-links').classList.toggle('show');
+    });
+
+    window.addEventListener('scroll', () => {
+      const scrollY = window.scrollY;
+      const banner = document.querySelector('.top-banner img');
+      banner.style.transform = `translateY(${scrollY * 0.3}px)`;
+    });
+  </script>
+      <script src="../../javascript/script.js"></script>
+</body>
+</html>

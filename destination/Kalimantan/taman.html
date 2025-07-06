@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Paradise Tour</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="../../css/kota.css">
+</head>
+<body>
+  <nav>
+    <div class="nav-container">
+      <span class="logo-text"><a href="../../index.html" class="logo">Paradise</a></span>
+      <div class="menu-toggle" id="menu-toggle">☰</div>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="../../index.html">Beranda</a></li>
+        <li><a href="../../index.html#jelajah">Jelajahi</a></li>
+        <li><a href="../../index.html#aboutus">Tentang Kami</a></li>
+        <li><a href="../../index.html#kaki">Hubungi Kami</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="top-banner">
+    <img src="../../Images/pantai kutaa2.jpg" alt="Banner" />
+  </div>
+
+  <section>
+    <div class="top-info">
+      <div class="info-group"><i class="fas fa-clock"></i> 10D/07N</div>
+      <div class="info-group"><i class="fas fa-users"></i> 20 People</div>
+      <div class="info-group"><i class="fas fa-star"></i> Premiere Class: Available</div>
+      <div class="info-group"><i class="fas fa-calendar-alt"></i> Autumn Holiday | Low Season Departure</div>
+      <div class="info-group"><i class="fas fa-globe"></i> Czech Republic - Slovakia - Germany - Hungary - Austria</div>
+      <div class="info-group"><i class="fas fa-map-marker-alt"></i> Prague - Budapest - Vienna - Salzburg</div>
+      <div class="price-box">
+        <del>IDR 40,888,000</del>
+        <strong>IDR 35,888,000</strong><br />
+        <a href="#" class="btn-book">BOOK THIS TOUR</a>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Experience Highlights</h2>
+      <p><span class="bold">Nuremberg</span> - Menyatu antara kemegahan bersejarah & pesona modern.</p>
+      <p><span class="bold">Hallstatt</span> - Danau menakjubkan seperti pantulan kaca.</p>
+      <p><span class="bold">Fisherman's Bastion</span> - Arsitektur klasik & legenda Budapest.</p>
+    </div>
+
+    <div class="section">
+      <h2>Why Book With Us?</h2>
+      <p>Mengunjungi <span class="bold">FISHERMAN BASTION</span></p>
+      <p>Mengunjungi <span class="bold">OLD TOWN PRAGUE</span></p>
+    </div>
+  </section>
+
+  <footer>
+    <h3>&copy; Kelompok Malas Menanggapi</h3>
+  </footer>
+
+  <script>
+    document.getElementById('menu-toggle').addEventListener('click', function () {
+      document.getElementById('nav-links').classList.toggle('show');
+    });
+
+    window.addEventListener('scroll', () => {
+      const scrollY = window.scrollY;
+      const banner = document.querySelector('.top-banner img');
+      banner.style.transform = `translateY(${scrollY * 0.3}px)`;
+    });
+  </script>
+      <script src="../../javascript/script.js"></script>
+</body>
+</html>
