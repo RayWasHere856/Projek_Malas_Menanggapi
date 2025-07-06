@@ -1,204 +1,213 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+/* === Import Google Fonts: Poppins dengan berbagai ketebalan === */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
 
+/* === GLOBAL STYLE === */
 body {
-    margin: 0;
-    font-family: 'Poppins', sans-serif;
-    background-color: #f4faff;
-    color: #333;
-    overflow-x: hidden;
+  margin: 0; /* Menghapus margin bawaan browser */
+  font-family: "Poppins", sans-serif; /* Mengatur font default ke Poppins */
+  background-color: #f4faff; /* Warna latar belakang biru muda */
+  color: #333; /* Warna teks default abu gelap */
+  overflow-x: hidden; /* Menghilangkan scroll horizontal */
 }
 
 a {
-    text-decoration: none;
-    color: inherit;
+  text-decoration: none; /* Menghapus garis bawah pada link */
+  color: inherit; /* Warna link mengikuti warna parent */
 }
 
+/* === NAVIGASI === */
 nav {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background-color: #4682B4;
-    color: white;
-    z-index: 999;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  position: fixed; /* Posisi tetap di atas halaman saat discroll */
+  top: 0;
+  width: 100%; /* Lebar penuh */
+  background-color: #4682b4; /* Warna biru */
+  color: white;
+  z-index: 999; /* Supaya berada di atas elemen lain */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Efek bayangan bawah */
 }
 
 .nav-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-    max-width: 1200px;
-    margin: auto;
+  display: flex; /* Mengatur layout ke flex */
+  justify-content: space-between; /* Menyebarkan elemen kiri-kanan */
+  align-items: center;
+  padding: 10px 20px;
+  max-width: 1200px;
+  margin: auto;
 }
 
 .logo-text {
-    font-size: 26px;
-    font-weight: bold;
+  font-size: 26px;
+  font-weight: bold;
 }
 
 .menu-toggle {
-    display: none;
-    font-size: 28px;
-    cursor: pointer;
-    position: relative;
-    z-index: 1001;
+  display: none; /* Default disembunyikan, muncul di versi mobile */
+  font-size: 28px;
+  cursor: pointer;
+  position: relative;
+  z-index: 1001;
 }
 
 .nav-links {
-    display: flex;
-    list-style: none;
-    gap: 20px;
+  display: flex;
+  list-style: none;
+  gap: 20px;
 }
 
 .nav-links li a {
-    font-size: 14px;
-    font-weight: 500;
-    padding: 6px 10px;
-    border-radius: 5px;
-    transition: 0.3s ease;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 6px 10px;
+  border-radius: 5px;
+  transition: 0.3s ease;
 }
 
 .nav-links li a:hover {
-    background-color: white;
-    color: #080E49;
-    text-decoration: underline;
+  background-color: white;
+  color: #080e49;
+  text-decoration: underline;
 }
 
+/* === BANNER UTAMA === */
 .top-banner {
-    position: relative;
-    height: 600px;
-    overflow: hidden;
-    margin-top: 60px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  position: relative;
+  height: 600px;
+  overflow: hidden;
+  margin-top: 60px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
 
 .top-banner img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transform: translateY(0);
-    transition: transform 0.2s ease-out;
-    will-change: transform;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Memastikan gambar memenuhi kontainer */
+  transform: translateY(0);
+  transition: transform 0.2s ease-out;
+  will-change: transform;
 }
 
+/* === INFORMASI DI ATAS HALAMAN === */
 .top-info {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: space-between;
-    align-items: center;
-    margin: 30px 20px;
-    border-bottom: 1px solid #ddd;
-    padding-bottom: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+  align-items: center;
+  margin: 30px 20px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 20px;
 }
 
 .info-group {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    flex: 1 1 200px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex: 1 1 200px;
 }
 
 .info-group i {
-    color: teal;
-    font-size: 20px;
+  color: teal;
+  font-size: 20px;
 }
 
+/* Kotak harga promo */
 .price-box {
-    border: 1px solid #4682B4;
-    padding: 10px 20px;
-    border-radius: 8px;
-    text-align: center;
-    color: #4682B4;
+  border: 1px solid #4682b4;
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-align: center;
+  color: #4682b4;
 }
 
 .price-box del {
-    color: #999;
-    display: block;
+  color: #999; /* Harga lama dicoret warna abu */
+  display: block;
 }
 
 .price-box strong {
-    font-size: 20px;
-    color: #4682B4;
-    font-weight: bold;
+  font-size: 20px;
+  color: #4682b4;
+  font-weight: bold;
 }
 
+/* Tombol booking */
 .btn-book {
-    display: inline-block;
-    background-color: #4682B4;
-    color: white;
-    padding: 10px 20px;
-    margin-top: 10px;
-    border: none;
-    border-radius: 6px;
-    text-decoration: none;
-    cursor: pointer;
+  display: inline-block;
+  background-color: #4682b4;
+  color: white;
+  padding: 10px 20px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 6px;
+  text-decoration: none;
+  cursor: pointer;
 }
 
+/* === SECTIONS === */
 section {
-    padding: 100px 20px 50px;
+  padding: 100px 20px 50px;
 }
 
 .section {
-    margin: 0 20px 30px 20px;
+  margin: 0 20px 30px 20px;
 }
 
 .section h2 {
-    font-size: 20px;
-    margin-bottom: 15px;
-    border-bottom: 1px solid #ccc;
-    padding-bottom: 5px;
+  font-size: 20px;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 5px;
 }
 
 .section p {
-    margin: 10px 0;
+  margin: 10px 0;
 }
 
 .bold {
-    font-weight: bold;
+  font-weight: bold;
 }
 
+/* === FOOTER === */
 footer {
-    background-color: #4682B4;
-    text-align: center;
-    color: white;
-    padding: 15px 0;
-    margin: 0;
-    position: relative;
-    bottom: 0;
-    width: 100%;
+  background-color: #4682b4;
+  text-align: center;
+  color: white;
+  padding: 15px 0;
+  margin: 0;
+  position: relative;
+  bottom: 0;
+  width: 100%;
 }
 
-/* Responsive */
+/* === RESPONSIVE BREAKPOINT: 1024px === */
 @media (max-width: 1024px) {
-    .top-info {
-        flex-direction: column;
-        align-items: flex-start;
-    }
+  .top-info {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 
-    .info-group {
-        flex: 1 1 100%;
-        margin-bottom: 10px;
-    }
+  .info-group {
+    flex: 1 1 100%;
+    margin-bottom: 10px;
+  }
 
-    .price-box {
-        align-self: flex-start;
-        margin-top: 20px;
-        width: 100%;
-    }
-
+  .price-box {
+    align-self: flex-start;
+    margin-top: 20px;
+    width: 100%;
+  }
 }
 
+/* === RESPONSIVE BREAKPOINT: 768px === */
 @media (max-width: 768px) {
   .menu-toggle {
-    display: block;
+    display: block; /* Munculkan tombol menu hamburger */
   }
 
   .nav-links {
     display: none;
     flex-direction: column;
-    background-color: #4682B4;
+    background-color: #4682b4;
     position: absolute;
     top: 45px;
     left: 0;
@@ -210,54 +219,55 @@ footer {
   .nav-links.active {
     display: flex;
   }
-  
-    .top-banner {
-        height: 300px;
-    }
 
-    section {
-        padding: 60px 20px;
-    }
+  .top-banner {
+    height: 300px;
+  }
 
-    .btn-book {
-        width: 50%;
-        text-align: center;
-    }
+  section {
+    padding: 60px 20px;
+  }
 
-    .price-box {
-        width: 100%;
-        padding: 15px;
-    }
+  .btn-book {
+    width: 50%;
+    text-align: center;
+  }
 
+  .price-box {
+    width: 100%;
+    padding: 15px;
+  }
 }
+
+/* === RESPONSIVE BREAKPOINT: 480px === */
 @media (max-width: 480px) {
-    .logo-text {
-        font-size: 20px;
-    }
+  .logo-text {
+    font-size: 20px;
+  }
 
-    .nav-links li a {
-        font-size: 12px;
-        padding: 5px 8px;
-    }
+  .nav-links li a {
+    font-size: 12px;
+    padding: 5px 8px;
+  }
 
-    .section h2 {
-        font-size: 16px;
-    }
+  .section h2 {
+    font-size: 16px;
+  }
 
-    .section p {
-        font-size: 13px;
-    }
+  .section p {
+    font-size: 13px;
+  }
 
-    .btn-book {
-        font-size: 14px;
-        padding: 8px 12px;
-    }
+  .btn-book {
+    font-size: 14px;
+    padding: 8px 12px;
+  }
 
-    .price-box strong {
-        font-size: 18px;
-    }
+  .price-box strong {
+    font-size: 18px;
+  }
 
-    footer h3 {
-        font-size: 14px;
-    }
+  footer h3 {
+    font-size: 14px;
+  }
 }
