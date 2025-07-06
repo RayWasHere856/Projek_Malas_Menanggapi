@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Form Pemesanan</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4faff;
+      margin: 0;
+      padding: 0;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    /* === NAVBAR === */
+    nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background-color: #4682B4;
+      color: white;
+      z-index: 999;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    }
+
+    .nav-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .logo-text {
+      font-size: 26px;
+      font-weight: bold;
+    }
+
+    .logo-text a {
+      color: white;
+      text-decoration: none;
+    }
+
+    .menu-toggle {
+      display: none;
+      font-size: 28px;
+      cursor: pointer;
+    }
+
+    .nav-links {
+      display: flex;
+      list-style: none;
+      gap: 20px;
+    }
+
+    .nav-links li a {
+      font-size: 14px;
+      font-weight: 500;
+      padding: 6px 10px;
+      border-radius: 5px;
+      color: white;
+      text-decoration: none;
+      transition: 0.3s ease;
+    }
+
+    .nav-links li a:hover {
+      background-color: white;
+      color: #080E49;
+      text-decoration: underline;
+    }
+
+    /* === FORM DAN CARD === */
+    .container {
+      margin-top: 100px;
+      width: 100%;
+      max-width: 400px;
+    }
+
+    form, .card {
+      background: #fff;
+      padding: 20px;
+      border-radius: 12px;
+      width: 100%;
+      margin-bottom: 20px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    h3 {
+      margin-top: 0;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 8px;
+    }
+
+    select, button, .btn-kembali {
+      padding: 10px;
+      width: 100%;
+      margin-top: 10px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+    }
+
+    button {
+      background-color: #007bff;
+      color: white;
+      border: none;
+      cursor: pointer;
+      font-weight: bold;
+      transition: background-color 0.3s;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+
+    .btn-kembali {
+      display: block;
+      background-color: #6c757d;
+      color: white;
+      text-align: center;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background-color 0.3s;
+    }
+
+    .btn-kembali:hover {
+      background-color: #5a6268;
+    }
+
+    .card h4 {
+      margin-top: 0;
+      color: #333;
+    }
+
+    .card p {
+      margin: 6px 0;
+      color: #555;
+    }
+
+    /* === RESPONSIVE NAVIGATION === */
+    @media (max-width: 768px) {
+      .menu-toggle {
+        display: block;
+      }
+
+      .nav-links {
+        display: none;
+        flex-direction: column;
+        background-color: #4682B4;
+        position: absolute;
+        top: 55px;
+        left: 0;
+        width: 100%;
+        padding: 10px 0;
+        text-align: center;
+      }
+
+      .nav-links.active {
+        display: flex;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAVIGASI -->
+  <nav>
+    <div class="nav-container">
+      <span class="logo-text"><a href="index.html" class="logo">Paradise</a></span>
+      <div class="menu-toggle" id="menu-toggle">☰</div>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#beranda">Beranda</a></li>
+        <li><a href="#jelajah">Jelajahi</a></li>
+        <li><a href="#aboutus">Tentang Kami</a></li>
+        <li><a href="#kaki">Hubungi Kami</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- FORM & HASIL PESANAN -->
+  <div class="container">
+    <form id="formPemesanan">
+      <h3>Pilih Jumlah Orang</h3>
+      <label><input type="radio" name="orang" value="1 Orang"> 1 Orang</label>
+      <label><input type="radio" name="orang" value="2 Orang"> 2 Orang</label>
+      <label><input type="radio" name="orang" value="3 Orang"> 3 Orang</label>
+
+      <h3>Pilih Paket</h3>
+      <select id="paketSelect" required>
+        <option value="">-- Pilih Paket --</option>
+        <option value="Paket A">Paket A</option>
+        <option value="Paket B">Paket B</option>
+        <option value="Paket C">Paket C</option>
+      </select>
+
+      <button type="submit">Simpan Pesanan</button>
+      <a href="index.html" class="btn-kembali">Kembali</a>
+    </form>
+
+    <div id="hasilPesanan"></div>
+  </div>
+
+  <!-- SCRIPT UNTUK MENYIMPAN & MENAMPILKAN PESANAN -->
+  <script>
+    document.getElementById('formPemesanan').addEventListener('submit', function(e) {
+      e.preventDefault();
+
+      const orang = document.querySelector('input[name="orang"]:checked');
+      const paket = document.getElementById('paketSelect').value;
+
+      if (!orang || !paket) {
+        alert("Silakan pilih jumlah orang dan paket.");
+        return;
+      }
+
+      const dataPesanan = {
+        orang: orang.value,
+        paket: paket
+      };
+
+      // Simpan ke localStorage
+      localStorage.setItem('pesanan', JSON.stringify(dataPesanan));
+
+      // Tampilkan hasil dalam bentuk kartu
+      document.getElementById('hasilPesanan').innerHTML = `
+        <div class="card">
+          <h4>Pesanan Tersimpan</h4>
+          <p><strong>Jumlah Orang:</strong> ${orang.value}</p>
+          <p><strong>Paket Dipilih:</strong> ${paket}</p>
+        </div>
+      `;
+    });
+
+    // Navigasi responsive toggle
+    document.getElementById('menu-toggle').addEventListener('click', function () {
+      document.getElementById('nav-links').classList.toggle('active');
+    });
+  </script>
+
+</body>
+</html>
